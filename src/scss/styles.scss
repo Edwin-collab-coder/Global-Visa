@@ -1,0 +1,15 @@
+
+$primary: #ff5733;
+
+// Importar Bootstrap desde node_modules
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Aquí puedes sobrescribir variables antes del import si quieres
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #fff
+}
+
