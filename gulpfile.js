@@ -5,16 +5,16 @@ const cleanCSS = require('gulp-clean-css');
 
 // Compilar Sass
 function styles() {
-    return gulp.src('src/scss/styles.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
-        .pipe(cleanCSS())
-        .pipe(gulp.dest('dist/css'));
+  return gulp.src('src/scss/styles.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('dist/css'));
 }
 
 // Watch
 function watchFiles() {
-    gulp.watch('src/scss/**/*.scss', styles);
+  gulp.watch('src/scss/**/*.scss', styles);
 }
 
 exports.styles = styles;
