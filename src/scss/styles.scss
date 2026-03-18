@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-base;
 }
 
+.font-family-base {
+  font-family: $font-family-base;
+}
+
 .navbar {
   --bs-navbar-toggler-border-color: none;
   background-color: #fff !important;
@@ -141,6 +145,66 @@ a.navbar-brand img {
   margin: 0 auto;
   width: 80%;
   border-radius: 15px;
+}
+
+.ctrlL, .ctrlR {
+  left: 34%;
+  top: 24px;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 83%;
+}
+
+.carousel-inner {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.containerTeam img {
+  width: 200px;
+}
+
+.styleCard {
+  border-radius: 15px;
+  width: 202px;
+  margin-left: 40px;
+  border: 1px solid #000;
+  box-shadow: 7px 6px #000;
+}
+
+.styleCard img {
+  top: 30px;
+  left: 30px;
+}
+
+.priceCard {
+
+  border-bottom-right-radius:20px;
+}
+
+.cardWorkflow {
+  border: 2px solid #c04b62;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 8px #c04b62;
+}
+
+.contentCardTestimonial {
+  bottom: 7px;
+  left: 43px;
+}
+
+.shadowCardTestimonial {
+  border-radius: 15px;
+  height: 411px;
+  width: 260px;
 }
 
 // Responsive fix para el navbar
