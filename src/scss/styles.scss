@@ -1,64 +1,161 @@
-
 // Variables tipográficas
-$font-family-base: 'Georgia', serif;   
+$font-family-base: 'Georgia', serif;
 $font-weight-bold: 700;
-$font-weight-semibold: 600;
-$font-weight-regular: 400;
 
-$font-size-base: 1.625rem;
-$font-weight-base: 600;
-
-$heading-font-family: $font-family-base;
-$heading-font-weight: $font-weight-bold;
 $body-font-family: 'Arial', sans-serif;
-$body-font-weight: $font-weight-regular;
 
-$heading-margin-bottom: 0.5rem;
-$paragraph-margin-bottom: 1rem;
-//colors
 $primary: #c04b62;
 $secondary: #472d30;
-$tertiary: #feebc2;
 
-// Importar Bootstrap desde node_modules
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+  xxl: 1920px
+);
+
+// Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Aquí puedes sobrescribir variables antes del import si quieres
+.tertiary {
+  color: #feebc2; 
+}
 
-
+// Estilos personalizados
 body {
-  margin: 0px;
-  padding: 0px;
-  background: #fff
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: $body-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-base;
 }
 
 .navbar {
-  --bs-navbar-toggler-border-color:none;
+  --bs-navbar-toggler-border-color: none;
+  background-color: #fff !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 a.navbar-brand img {
-  width: 170px;
+  width: 150px;
 }
 
 .btnSearch {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-}
-
-.btnSearch svg {
-  margin-left: 12px;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  svg {
+    margin: 0;
+  }
 }
 
 .tittleAbout {
-  width: 263px;;
+  max-width: 263px; // Ajustado para móvil
 }
 
 .pictureAbout {
-  margin: 22px;
+  margin: 22px 0;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
 }
 
-.pictureAbout img {
-  width: stretch;
+// Línea horizontal personalizada
+.custom-hr {
+  height: 4px;
+  background-color: #000;
+  opacity: 1;
+}
+
+// Botones
+.btn-section {
+  font-size: 11px;
+  width: max-content;
+  padding: 7px 15px;
+  border-radius: 23px;
+  font-weight: 600;
+  font-family: Georgia;
+  
+}
+
+// Ajustes de espaciado para móvil
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Cards y elementos visuales
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.containerImageServices img {
+  width: -webkit-fill-available;
+}
+
+.btncardservices {
+  top: 342px;
+  border-radius: 50%;
+  background-color: #FFF;
+  left: 25px;
+}
+
+.postServices {
+  top: 141px;
+  left: 87px;
+  border-radius: 16px;
+}
+
+.iconChoose {
+  border-radius: 5px;
+  padding: 4px;
+  height: 33px;
+}
+
+.cardChoose {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 15px;
+}
+
+// Responsive fix para el navbar
+@media (max-width: 375px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+  
+  .btnSearch {
+    width: 35px;
+    height: 35px;
+    
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
 }
