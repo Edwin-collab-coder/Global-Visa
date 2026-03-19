@@ -7,6 +7,7 @@ $body-font-family: 'Arial', sans-serif;
 $primary: #c04b62;
 $secondary: #472d30;
 
+
 $grid-breakpoints: (
   xs: 0,
   sm: 375px,
@@ -16,8 +17,11 @@ $grid-breakpoints: (
   xxl: 1920px
 );
 
-// Importar Bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 .tertiary {
   color: #feebc2; 
@@ -245,4 +249,51 @@ a.navbar-brand img {
       height: 14px;
     }
   }
+}
+
+@include media-breakpoint-up(md) {
+
+  .btnSearch {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about .container-fluid {
+    display: flex;
+  }
+
+  .pictureAbout img {
+    margin-top: 117px;
+  }
+
+  .pictureAbout {
+    width: 100%;
+  }
+
+  .containercardServices {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contentServices {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .contentServices h2 {
+    width: 466px;
+    margin: 0 auto;
+  }
+
+  .cardmdServices {
+    width: 200px;
+  }
+
+  .btncardservices {
+    top: 223px;
+    left: 65px;
+  }
+
 }
