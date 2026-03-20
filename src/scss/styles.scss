@@ -240,6 +240,34 @@ a.navbar-brand img {
 .offcanvas-header img {
   width: 200px;
 }
+
+.imgcontainerchooseus img {
+  width: 322px;
+}
+
+.fDupla {
+  display: none;
+}
+
+.ctrlLeducation, .ctrlReducation {
+  left: 34%;
+  top: 24px;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.ctrlLTestimonial, .ctrlRTestimonial {
+  left: 34%;
+  top: 24px;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
 // Responsive fix para el navbar
 
 @media (max-width: 375px) {
@@ -335,8 +363,95 @@ a.navbar-brand img {
     margin-top: 50px;
   }
 
-  .titleCountries {
-    margin: 0px;
+  .ctrlL,.ctrlR {
+    top: auto;
+    left: 83%;
+    bottom: 390px;
   }
+
+  .fDupla {
+    display: block;
+  }
+
+
+.containaercardcontriesmd {
+  display: flex;
+  gap: 20px;
+}
+
+  #carouselExampleCaptionsCountries .carousel-inner {
+    width: auto;
+  }
+
+  .containerTeam {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+  }
+
+  .styleCard {
+    margin-left: 0px;
+  }
+
+  .titleTeam {
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  .titleEducaction {
+    display: flex;
+  }
+
+  .peducation {
+    display: flex;
+    align-items: center;
+  }
+
+  .ctrlLeducation,.ctrlReducation {
+    top: auto;
+    left: 83%;
+    bottom: 468px;
+  }
+
+  .cardWorkflow {
+    margin: 0px;
+    width: 31%;
+  }
+  .containerCardWorkflow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+  }
+
+  .titleTestimonial {
+    display: flex;
+  }
+
+  .ptestimonial {
+  display: flex;
+  align-items: center;
+  }
+
+  .ctrlRTestimonial, .ctrlLTestimonial {
+    top: auto;
+    left: 83%;
+    bottom: 390px;
+  }
+
+}
+@include media-breakpoint-up(lg) {
+
+  .cardWorkflow {
+    width: 31%;
+  }
+
+  .containerCardWorkflow {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
 
 }
