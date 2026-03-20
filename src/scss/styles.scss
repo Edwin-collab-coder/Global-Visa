@@ -27,6 +27,10 @@ $grid-breakpoints: (
   color: #feebc2; 
 }
 
+.navbar {
+  --bs-navbar-toggler-focus-width: none;
+}
+
 // Estilos personalizados
 body {
   margin: 0;
@@ -229,10 +233,13 @@ a.navbar-brand img {
   width: 80%;
 }
 
+.offcanvas-header {
+  gap: 27px;
+}
+
 .offcanvas-header img {
   width: 200px;
 }
- 
 // Responsive fix para el navbar
 
 @media (max-width: 375px) {
@@ -294,6 +301,42 @@ a.navbar-brand img {
   .btncardservices {
     top: 223px;
     left: 65px;
+  }
+
+  .containercardmd {
+    display: flex;
+    align-items: flex-end;
+    gap: 17px;
+  }
+
+  .containerchooseUs {
+    display: flex;
+    gap: 15px;
+  }
+
+  .imgcontainerchooseus img {
+    width: 100%;
+  }
+
+  .imgcontainerchooseus {
+      top: 140px;
+  }
+
+  .postServices {
+    top: 113px;
+    left: 53px;
+  }
+
+  .contentCountrier {
+    display: flex;
+  }
+
+  .textCountries {
+    margin-top: 50px;
+  }
+
+  .titleCountries {
+    margin: 0px;
   }
 
 }
