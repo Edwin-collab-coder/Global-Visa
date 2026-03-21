@@ -5,11 +5,10 @@ $font-weight-bold: 700;
 $body-font-family: 'Arial', sans-serif;
 
 $primary: #c04b62;
-$secondary: #472d30;
+$secondary: #472d30;   
 
-
-$grid-breakpoints: (
-  xs: 0,
+$grid-breakpoints: (  
+  xs: 0          ,
   sm: 375px,
   md: 768px,
   lg: 1024px,
@@ -207,6 +206,7 @@ a.navbar-brand img {
 .contentCardTestimonial {
   bottom: 7px;
   left: 43px;
+  border-radius: 17px;
 }
 
 .shadowCardTestimonial {
@@ -221,6 +221,7 @@ a.navbar-brand img {
 }
 
 .cardNew {
+  width: 100%;
   box-shadow: 0px 1px 13px 1px #000;
   border-radius: 13px;
 }
@@ -268,6 +269,10 @@ a.navbar-brand img {
   height: 40px;
   padding: 10px;
 }
+
+  .text-center img {
+    width: 166px;
+  }
 // Responsive fix para el navbar
 
 @media (max-width: 375px) {
@@ -410,7 +415,7 @@ a.navbar-brand img {
   .ctrlLeducation,.ctrlReducation {
     top: auto;
     left: 83%;
-    bottom: 468px;
+    bottom: 440px;
   }
 
   .cardWorkflow {
@@ -436,7 +441,51 @@ a.navbar-brand img {
   .ctrlRTestimonial, .ctrlLTestimonial {
     top: auto;
     left: 83%;
-    bottom: 390px;
+    bottom: 480px;
+  }
+
+  .containercardTestimonial {
+    display: flex;
+    gap: 67px;
+  }
+
+  .shadowCardTestimonial {
+    height: 362px;
+  }
+
+  .titleNews {
+    width: 68%;
+    margin: 0 auto;
+  }
+
+  .containerCardNews {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .cardNew {
+    width: 335px;
+  }
+
+  .contentFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    align-items: baseline;
+  }
+
+  .containerAbout {
+   width: 47%;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: inset;
+  }
+
+  .text-center img {
+    width: 40%;
   }
 
 }
