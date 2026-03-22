@@ -26,6 +26,10 @@ $grid-breakpoints: (
   color: #feebc2; 
 }
 
+.topBar {
+  display: none;
+}
+
 .navbar {
   --bs-navbar-toggler-focus-width: none;
 }
@@ -508,12 +512,13 @@ a.navbar-brand img {
     box-shadow: inset;
   }
 
-  .text-center img {
-    width: 40%;
-  }
-
 }
+
 @include media-breakpoint-up(lg) {
+
+  .topBar {
+    display: block;
+  }
 
   .cardWorkflow {
     width: 31%;
