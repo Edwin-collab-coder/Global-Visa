@@ -270,9 +270,33 @@ a.navbar-brand img {
   padding: 10px;
 }
 
-  .text-center img {
-    width: 166px;
-  }
+.text-center img {
+  width: 166px;
+}
+
+.contentHero {
+  top: 30px;
+}
+
+.imgruleshero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-position: center;
+}
+
+.cardonehero {
+  background-image: url("/Media/Rectangle-1.png");
+}
+
+.cardtwohero {
+  background-image: url("/Media/Rectangle-2.png");
+}
+
+.cardthreehero {
+  background-image: url("/Media/Rectangle-1-1.png");
+}
+
 // Responsive fix para el navbar
 
 @media (max-width: 375px) {
