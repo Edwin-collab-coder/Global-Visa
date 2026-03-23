@@ -30,6 +30,10 @@ $grid-breakpoints: (
   display: none;
 }
 
+.containerListlink {
+  display: none;
+}
+
 .navbar {
   --bs-navbar-toggler-focus-width: none;
 }
@@ -274,10 +278,6 @@ a.navbar-brand img {
   padding: 10px;
 }
 
-.text-center img {
-  width: 166px;
-}
-
 .contentHero {
   top: 30px;
 }
@@ -299,6 +299,12 @@ a.navbar-brand img {
 
 .cardthreehero {
   background-image: url("/Media/Rectangle-1-1.png");
+}
+
+.decor {
+  display: none;
+  position: absolute;
+  z-index: 0;
 }
 
 // Responsive fix para el navbar
@@ -356,12 +362,13 @@ a.navbar-brand img {
   }
 
   .cardmdServices {
-    width: 200px;
+    width: 31%;
+    position: relative;
   }
 
   .btncardservices {
-    top: 223px;
-    left: 65px;
+    top: 197px;
+    left: 23px;
   }
 
   .containercardmd {
@@ -420,6 +427,7 @@ a.navbar-brand img {
     display: flex;
     align-items: flex-end;
     gap: 40px;
+    justify-content: center;
   }
 
   .styleCard {
@@ -441,9 +449,9 @@ a.navbar-brand img {
   }
 
   .ctrlLeducation,.ctrlReducation {
-    top: auto;
+    top: unset;
     left: 83%;
-    bottom: 440px;
+    bottom: 480px;
   }
 
   .cardWorkflow {
@@ -512,6 +520,10 @@ a.navbar-brand img {
     box-shadow: inset;
   }
 
+  .containeraboutlg {
+    display: flex;
+  }
+
 }
 
 @include media-breakpoint-up(lg) {
@@ -520,16 +532,229 @@ a.navbar-brand img {
     display: block;
   }
 
+  .containerListlink {
+  display: block;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
   .cardWorkflow {
     width: 31%;
   }
 
   .containerCardWorkflow {
     flex-wrap: nowrap;
+  }
+
+  .contentHero {
     width: 100%;
     margin: 0 auto;
     max-width: 1024px;
   }
 
+    .decor {
+    display: block;
+  }
 
+  .decor-right {
+    width: 15%;
+    top: 7%;
+    right: 4%;
+  }
+
+  .decor-left {
+    width: 1.5%;
+    top: 12%;
+    left: 4%;
+  }
+
+  .containeraboutlg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .about {
+    padding: 3rem;
+  }
+
+  .containerImageServices {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .contentServices h2 {
+    width: 419px;
+    margin: 0 auto;
+  }
+
+  .btncardservices svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btncardservices {
+    top: 290px;
+    left: 34px;
+  }
+
+  .chooseUs {
+    padding: 3rem;
+  }
+
+  .decor-right-choose {
+    width: 1.5%;
+    top: 3%;
+  }
+
+  .decor-left-choose {
+    left: 4%;
+    width: 16%;
+    top: 4%;
+  }
+
+  .containerCardsChoose {
+    gap: 25px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .containercardmd {
+    display: contents;
+  }
+
+  .containerChooselg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .countries {
+    padding: 3rem;
+  }
+
+  .containercountrieslg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;    
+  }
+
+  .decor-left-down {
+    width: 2.5%;
+    top: 65%;
+    left: 4%;
+  }
+
+  .decor-left-top {
+    width: 17.5%;
+    top: 7%;
+    left: 3%;
+  }
+
+  .decor-right-top {
+    width: 17.5%;
+    top: 7%;
+    right: 2%;    
+  }
+
+  .decor-right-down {
+    width: 2.5%;
+    top: 65%;
+    right: 2%;    
+  }
+
+  .team {
+    padding: 3rem;
+  }
+
+  .containerteamlg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .education {
+    padding: 3rem;
+  }
+
+  .containereducationlg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;    
+  }
+
+  .workFlow {
+    padding: 3rem;
+  }
+
+  .containerworkFlowlg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px; 
+  }
+
+  .workFlow .container-fluid {
+    padding: 0px;
+  }
+
+  .decor-left-top-workflow {
+    width: 15.5%;
+    top: 3%;
+    left: 3%;
+  }
+
+  .decor-left-down-workflow {
+    width: 2%;
+    top: 65%;
+    left: 2%;
+  }
+
+  .decor-right-top-workflow {
+    width: 15.5%;
+    top: 3%;
+    right: 3%;
+  }
+
+  .decor-right-down-workflow {
+    width: 2%;
+    top: 65%;
+    right: 2%; 
+  }
+
+  .testimonial {
+    padding: 3rem;
+  }
+
+  .containertestimoniallg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;    
+  }
+
+  .containerCardNews {
+    flex-wrap: nowrap;
+  }
+
+  .news {
+    padding: 3rem;
+  }
+
+  .containernewslg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;    
+  }
+
+  .footer {
+    padding: 3rem;
+  }
+
+  .containerfooterlg {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;     
+  }
 }
