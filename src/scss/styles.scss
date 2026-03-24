@@ -39,6 +39,11 @@ $grid-breakpoints: (
 }
 
 // Estilos personalizados
+
+.navbar-toggler {
+  padding: 0px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -64,8 +69,21 @@ a.navbar-brand img {
   width: 150px;
 }
 
+
+
+.carousel-indicators [data-bs-target] {
+  opacity: 1;
+  height: 4px;
+  border-radius: 9px;
+  border-top: unset;
+  border-bottom: unset;
+  transition: width 0.5s ease-in-out;
+  background-color:#E1C699 !important;
+}
+
 .carousel-indicators .active {
-  background-color: $primary;
+  width: 45px;
+  background-color: $primary !important;
 }
 
 .btnSearch {
@@ -255,7 +273,7 @@ a.navbar-brand img {
 }
 
 .imgcontainerchooseus img {
-  width: 322px;
+  width: 100%;
 }
 
 .fDupla {
@@ -802,20 +820,19 @@ a.navbar-brand img {
     max-width: 1024px;       
   }
 
-  .containertopBar {    
+  .containerheroopBar {    
     width: 100%;
     margin: 0 auto;
     max-width: 1024px; 
   }
 
-  .containerhero {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1024px;  
-  }
-
   .contentHero {
     width: 50%;
+  }
+
+  .titleworkFlow {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -839,13 +856,21 @@ a.navbar-brand img {
     left: 12%;
   }
 
-  .hero .carousel-indicators {
-    left: 65%;
-  }
-
   .decor-right {
       width: 10%;
       top: 19%;
       right: 12%;
+  }
+
+  .cardonehero {
+    padding: 3rem;
+  }
+
+  .cardtwohero {
+    padding: 3rem;
+  }
+
+  .cardthreehero {
+    padding: 3rem;
   }
 }
