@@ -84,7 +84,7 @@
     </section>
 
     <section class="topbar">
-      <nav class="navbar bg-body-tertiary ">
+      <nav class="navbar bg-body-tertiary border-bottom border-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="Media/Vector-1.svg" alt="logo"></a>
 
@@ -93,14 +93,13 @@
             <ul class="list-unstyled m-0 d-flex gap-3">
               <li>
                 <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="text-decoration-none font-family-base dropdown-toggle" href="#" role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
                     Home
                   </a>
                 
                   <div class="dropdown-menu z-2" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#"><span class="text-primary">Home</span></a>
+                    <a class="dropdown-item" href="#"><span class="text-primary">Home2</span></a>
                   </div>
                 </div>
               </li>
@@ -111,7 +110,7 @@
 
               <li>
                 <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle text-black href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="text-decoration-none font-family-base dropdown-toggle text-black href="#" role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
                     Visa
                   </a>
                 
@@ -125,7 +124,7 @@
 
               <li>
                 <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle text-black href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="text-decoration-none font-family-base dropdown-toggle text-black href="# role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
                     Pages
                   </a>
                 
@@ -154,7 +153,7 @@
               </svg>
             </div>
             
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list text-primary" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
@@ -176,10 +175,10 @@
             </div>
 
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 font-family-base">
 
                 <li class="nav-item dropdownone">
-                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link border-0" href="#" role="button"   aria-expanded="false">
                     Home
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
@@ -187,15 +186,10 @@
                   </a>
 
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="text-primary">Home</span></a></li>
 
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Home  2</a></li>
 
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
 
@@ -204,7 +198,7 @@
                 </li>
 
                 <li class="nav-item dropdownone">
-                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link " href="#" role="button"   aria-expanded="false">
                     Visa
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
@@ -212,36 +206,71 @@
                   </a>
 
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Visa Serivices</a></li>
 
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Visa Details</a></li>
 
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
 
                 <li class="nav-item dropdownone">
-                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link" href="#" role="button"   aria-expanded="false">
                     Pages
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
                     </svg>
                   </a>
 
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">
+                        Countries
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                        </svg>
+                      </a>
 
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                    <li>
-                      <hr class="dropdown-divider">
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Countries</a></li>
+                        <li><a class="dropdown-item" href="#">Countries Details</a></li>
+                      </ul>
                     </li>
 
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">
+                        Coaching
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                        </svg>
+                      </a>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Coaching</a></li>
+                        <li><a class="dropdown-item" href="#">Coaching Details</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">
+                        Team Members
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-plus-lg float-end" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                        </svg>
+                      </a>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Team Members</a></li>
+                        <li><a class="dropdown-item" href="#">Team Members Details</Details></a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
 
@@ -252,10 +281,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact</a>
                 </li>
-
               </ul>
 
-              <div class="mt-4 text-center bg-primary">
+              <div class="mt-4 text-center bg-primary split-btn">
                 <a href="#" class="text-decoration-none text-white font-family-base d-block p-2">
                   Get A Quote
                 </a>
@@ -276,7 +304,7 @@
         <div class="carousel-inner container-fluid p-0 w-100 containerhero">
           <div class="carousel-item active container-fluid p-0 pb-3 cardonehero imgruleshero">
             <div class="d-md-block container contentHero position-absolute mt-5">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center animate-right delay-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack-fill tertiary" viewBox="0 0 16 16">
                   <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
                   <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
@@ -286,16 +314,16 @@
 
               </div>
 
-              <div class="titleHero">
+              <div class="titleHero animate-right delay-1">
                 <h2 class="fs-md-1 text-white fw-bold mt-2">Work & Business <span class="text-primary">Visa </span>Focus </h2>
                 <hr class="text-white mt-0">
-                <p class="m-0 mt-3 text-white">
+                <p class="m-0 mt-3 text-white animate-right delay-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                 </p>
               </div>
 
-              <div class="containerButtons mt-4 d-flex gap-3">
+              <div class="containerButtons mt-4 d-flex gap-3 animate-right delay-3">
                 <div class="mt-2 btn-section border border-primary">
                 <a href="#" class="text-decoration-none text-primary">Read More</a>
               </div>
@@ -309,7 +337,7 @@
 
           <div class="carousel-item cardtwohero imgruleshero">
             <div class="d-md-block container contentHero position-absolute mt-5">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center animate-right delay-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack-fill tertiary" viewBox="0 0 16 16">
                   <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
                   <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
@@ -319,16 +347,16 @@
 
               </div>
 
-              <div class="titleHero">
+              <div class="titleHero animate-right delay-1">
                 <h2 class="fs-md-1 text-white fw-bold mt-2">Work & Business <span class="text-primary">Visa </span>Focus </h2>
                 <hr class="text-white mt-0">
-                <p class="m-0 mt-3 text-white">
+                <p class="m-0 mt-3 text-white animate-right delay-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                 </p>
               </div>
 
-            <div class="containerButtons mt-4 d-flex gap-3">
+            <div class="containerButtons mt-4 d-flex gap-3 animate-right delay-3">
                 <div class="mt-2 btn-section border border-primary">
                 <a href="#" class="text-decoration-none text-primary">Read More</a>
               </div>
@@ -342,7 +370,7 @@
 
           <div class="carousel-item imgruleshero cardthreehero">
             <div class="d-md-block container contentHero position-absolute mt-5">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center animate-right delay-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack-fill tertiary" viewBox="0 0 16 16">
                   <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
                   <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
@@ -352,16 +380,16 @@
 
               </div>
 
-              <div class="titleHero">
+              <div class="titleHero animate-right delay-1">
                 <h2 class="fs-md-1 text-white fw-bold mt-2">Work & Business <span class="text-primary">Visa </span>Focus </h2>
                 <hr class="text-white mt-0">
-                <p class="m-0 mt-3 text-white">
+                <p class="m-0 mt-3 text-white animate-right delay-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                 </p>
               </div>
 
-              <div class="containerButtons mt-4 d-flex gap-3">
+              <div class="containerButtons mt-4 d-flex gap-3 animate-right delay-3">
                 <div class="mt-2 btn-section border border-primary">
                 <a href="#" class="text-decoration-none text-primary">Read More</a>
               </div>
@@ -1677,6 +1705,8 @@
       </div>
     </footer>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/js/script.js"></script>
   </body>
 </html>
