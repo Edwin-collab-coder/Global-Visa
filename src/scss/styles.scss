@@ -132,6 +132,7 @@ a.navbar-brand img {
 }
 
 .backcard {
+  padding: 1rem;
   width: 100%;
   height: 100%;
   bottom: 1px;
@@ -142,8 +143,27 @@ a.navbar-brand img {
   transition: opacity .3s ease;
 }
 
+.contentback-card span {
+  font-size: 23px;
+}
+
 .cardmdServices:hover .backcard{
   opacity: 1;
+}
+
+.infoPerson {
+  top: 0px;
+  padding: 5px;
+  align-items: baseline;
+  gap: 31px;
+  color: #fff;
+}
+
+.infoPerson h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+
 }
 
 /* texto arriba del efecto */
@@ -216,8 +236,29 @@ svg.bi.bi-mortarboard-fill.text-primary {
 .delay-2 { transition-delay: 0.5s; }
 .delay-3 { transition-delay: 0.9s; }
 
-.btn-section:hover {
+.containerButtons .btn-section:hover {
   background-color: #c04b62;
+}
+
+.containaercardcontriesmd:hover {
+  background-color: #472d30 !important;
+  color: #fff;
+
+  .mt-2.border.border-primary.btn-section {
+  color: white !important;
+}
+}
+
+.containaercardcontriesmd:hover .btn-section {
+  background-color: #c04b62;
+
+ .containaercardcontriesmd .btn-section a {
+  color: #fff !important;
+  }
+}
+
+.btn-section:hover a {
+  color: #fff !important;
 }
 
 .socialContainer svg {
@@ -229,10 +270,6 @@ svg.bi.bi-mortarboard-fill.text-primary {
   bottom: 34px;
   left: 6px;
 }
-
-  .btn-section:hover a {
-    color: #fff !important;
-  }
 
 .carousel-indicators [data-bs-target] {
   opacity: 1;
@@ -291,7 +328,6 @@ svg.bi.bi-mortarboard-fill.text-primary {
   border-radius: 23px;
   font-weight: 600;
   font-family: Georgia;
-  
 }
 
 // Ajustes de espaciado para móvil
@@ -518,7 +554,6 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 .cardChoose:hover {
   background-color: #c04b62 !important;
   color: #fff;
-  
 }
 
 .cardChoose:hover svg {
@@ -526,7 +561,11 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 }
 
 .styleCard:hover {
-background-color: #472d30;
+background-color: #472d30 !important;
+}
+
+.btn-section.bg-primary:hover {
+  background-color: #472d30 !important;
 }
 
 // Responsive fix para el navbar
