@@ -131,6 +131,14 @@ a.navbar-brand img {
   cursor: pointer;
 }
 
+.btnSearch:hover {
+  background-color: #472d30 !important;
+}
+
+.socialContainer svg:hover {
+  color: #c04b62 !important;
+}
+
 .backcard {
   padding: 1rem;
   width: 100%;
@@ -205,7 +213,34 @@ svg.bi.bi-mortarboard-fill.text-primary {
   height: 60px;
 }
 
+.ctrlReducation:hover, .ctrlLeducation:hover {
+  background-color: #472d30 !important;
+}
 
+.ctrlL:hover, .ctrlR:hover {
+  background-color: #fff !important;
+
+  svg.bi.bi-chevron-right {
+    color: #c04b62 !important;
+  }
+
+  svg.bi.bi-chevron-left {
+    color: #c04b62 !important;
+  }
+}
+
+svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
+    width: 34px;
+    height: 34px;
+}
+
+.controlsTestimonial {
+  margin-top: 6rem;
+}
+
+.ctrlRTestimonial:hover, .ctrlLTestimonial:hover {
+  background-color: #472d30 !important;
+}
 /* hover activo */
 .split-btn:hover::before {
   transform: scaleY(1);
@@ -240,19 +275,22 @@ svg.bi.bi-mortarboard-fill.text-primary {
   background-color: #c04b62;
 }
 
-.containaercardcontriesmd:hover {
+
+
+.contentcardEducation:hover  {
   background-color: #472d30 !important;
   color: #fff;
+}
 
-  .mt-2.border.border-primary.btn-section {
-  color: white !important;
+.contentcardEducation:hover a {
+  color: #fff !important;
 }
-}
+  
 
 .containaercardcontriesmd:hover .btn-section {
   background-color: #c04b62;
 
- .containaercardcontriesmd .btn-section a {
+.containaercardcontriesmd .btn-section a {
   color: #fff !important;
   }
 }
@@ -344,6 +382,96 @@ svg.bi.bi-mortarboard-fill.text-primary {
 
 .bg-primary {
   background-color: $primary !important;
+}
+
+.contentFooter span {
+  color: #fff !important;
+}
+
+svg.bi.bi-plus-lg.float-end.text-primary {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 34px;
+}
+
+input#gsearch {
+  border: 0;
+  border-bottom: 3px solid #000;
+  width: 80%;
+  background: #ffffff00;
+  outline: none;
+}
+
+svg.bi.bi-x.text-primary {
+  position: fixed;
+  top: 30px;
+  right: 45px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.collapse:not(.show) {
+  display: flex; /* importante para mantener centrado */
+  height: 100% !important;
+}
+
+.collapsing {
+  height: 100% !important;
+  transition: none !important;
+}
+
+.collapse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffffe0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+
+/* Cuando está abierto */
+.collapse.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.contentFooter span:hover {
+  color: #c04b62 !important;
+}
+
+.btnHome {
+  right: 30px;
+  position: fixed;
+  border: 2px solid #c04b62;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 43px;
+}
+
+.btnHome:hover {
+  background-color: #c04b62 !important;
+}
+
+.btnHome:hover svg {
+  color: #fff !important;
 }
 
 .text-primary {
@@ -453,7 +581,27 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 
 .dateCard {
   border-top-right-radius: 5px;
-  top: 155px;
+  top: 48%;
+}
+
+.cardNew:hover {
+  background-color: #472d30;
+  border-radius: 12px;
+  color: #fff !important;
+}
+
+.news .btn-section:hover
+{
+    background-color: #c04b62 !important;
+}
+
+.SocialMedia svg {
+  width: 20px;
+  height: 20px;
+}
+
+.SocialMedia svg:hover {
+  color: #c04b62 !important;
 }
 
 .cardNew {
@@ -463,7 +611,7 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 }
 
 .textCopy {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .offcanvas.show {
@@ -587,6 +735,10 @@ background-color: #472d30 !important;
 }
 
 @include media-breakpoint-up(md) {
+
+  .offcanvas.show {
+    width: 50%;
+}
 
   .btnSearch {
     width: 30px;

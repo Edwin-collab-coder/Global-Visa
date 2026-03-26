@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dist/css/styles.css">
   </head>
 
-  <body>
+  <body class=".no-scroll">
     <section class="topBar bg-primary">
       <div class="container-fluid py-2 containertopBar">
         <div class=" d-flex justify-content-between">
@@ -84,7 +84,7 @@
     </section>
 
     <section class="topbar">
-      <nav class="navbar bg-body-tertiary border-bottom border-primary">
+      <nav class="navbar bg-body-tertiary border-bottom border-primary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="Media/Vector-1.svg" alt="logo"></a>
 
@@ -110,7 +110,7 @@
 
               <li>
                 <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle text-black href="#" role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
+                  <a class="text-decoration-none font-family-base dropdown-toggle text-black " href="#" role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
                     Visa
                   </a>
                 
@@ -147,10 +147,19 @@
           </div>
 
           <div class="containerButtons d-flex align-items-center">
-            <div class="bg-primary btnSearch me-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
+            <button   class="bg-primary btnSearch me-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
               </svg>
+            </button>
+
+            <div class="collapse" id="collapseExample">
+              <input type="search" id="gsearch" name="gsearch">
+              <div id="btnEnviar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-x text-primary" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
             </div>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -319,7 +328,7 @@
                 <hr class="text-white mt-0">
                 <p class="m-0 mt-3 text-white animate-right delay-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                 </p>
               </div>
 
@@ -352,7 +361,7 @@
                 <hr class="text-white mt-0">
                 <p class="m-0 mt-3 text-white animate-right delay-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
                 </p>
               </div>
 
@@ -904,14 +913,22 @@
           <div class="d-flex gap-3">
             <div class="bg-primary position-relative ctrlL">
               <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleCaptionsCountries" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                  </svg>
+                </span>
                 <span class="visually-hidden">Previous</span>
               </button>
             </div>
 
             <div class="bg-primary position-relative ctrlR">
               <button class="carousel-control-next opacity-100" type="button" data-bs-target="#carouselExampleCaptionsCountries" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
@@ -1084,7 +1101,7 @@
                     <img src="Media/Rectangle-20.png" class=" w-100 rounded-top " alt="...">
                   </div>
     
-                  <div class="mt-2 p-3">
+                  <div class="mt-2 p-3 contentcardEducation">
                     <h2 class="fw-bold m-0">ACT Courses</h2>
                     <hr class="custom-hr m-0 mb-2">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci,</p>
@@ -1103,7 +1120,7 @@
                     <img src="Media/Rectangle-21.png" class=" w-100 rounded-top " alt="...">
                   </div>
     
-                  <div class="mt-2 p-3">
+                  <div class="mt-2 p-3 contentcardEducation">
                     <h2 class="fw-bold m-0">ACT Courses</h2>
                     <hr class="custom-hr m-0 mb-2">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci,</p>
@@ -1127,7 +1144,7 @@
                     <img src="Media/Rectangle-21.png" class=" w-100 rounded-top " alt="...">
                   </div>
     
-                  <div class="mt-2 p-3">
+                  <div class="mt-2 p-3 contentcardEducation">
                     <h2 class="fw-bold m-0">ACT Courses</h2>
                     <hr class="custom-hr m-0 mb-2">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci,</p>
@@ -1146,7 +1163,7 @@
                     <img src="Media/Rectangle-20.png" class=" w-100 rounded-top " alt="...">
                   </div>
     
-                  <div class="mt-2 p-3">
+                  <div class="mt-2 p-3 contentcardEducation">
                     <h2 class="fw-bold m-0">ACT Courses</h2>
                     <hr class="custom-hr m-0 mb-2">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci,</p>
@@ -1170,7 +1187,7 @@
                     <img src="Media/Rectangle-21.png" class=" w-100 rounded-top " alt="...">
                   </div>
     
-                  <div class="mt-2 p-3">
+                  <div class="mt-2 p-3 contentcardEducation">
                     <h2 class="fw-bold m-0">ACT Courses</h2>
                     <hr class="custom-hr m-0 mb-2">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci,</p>
@@ -1189,7 +1206,7 @@
                     <img src="Media/Rectangle-21.png" class=" w-100 rounded-top " alt="...">
                   </div>
     
-                  <div class="mt-2 p-3">
+                  <div class="mt-2 p-3 contentcardEducation">
                     <h2 class="fw-bold m-0">ACT Courses</h2>
                     <hr class="custom-hr m-0 mb-2">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci,</p>
@@ -1476,9 +1493,58 @@
                 </div>                
               </div>
             </div>
+
+            <div class=" mt-4 carousel-item">
+              <div class="containercardTestimonial">
+                <div class="bg-secondary rounded-4 shadowCardTestimonial mx-auto">
+                  <img src="Media/3.svg" alt="decoration">
+                  
+                  <div class="rounded-4 bg-white border border-primary border-2 p-3 position-relative contentCardTestimonial">
+                    <div class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-primary" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                      </svg>
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-primary" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                      </svg>
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-primary" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                      </svg>
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-primary" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                      </svg>
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-primary" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                      </svg>
+                    </div>
+                  
+                    <p class="m-0"><span class="fs-2 font-family-base fw-bold">E</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci</p>
+                  
+                    <hr class="custom-hr">
+                  
+                    <div class="mt-2 d-flex">
+                      <div class="me-2">
+                        <img src="Media/Ellipse-9.svg" alt="User">
+                      </div>
+                  
+                      <div>
+                        <h2 class="fw-bold">Bob Harrison</h2>
+                        <p class="m-0">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <div class="mt-5 d-flex gap-3">
+          <div class="d-flex gap-3 controlsTestimonial">
             <div class="bg-primary position-relative ctrlLTestimonial">
               <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleCaptionsTestimonial" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1532,7 +1598,7 @@
               <img src="Media/Rectangle-29.png" class=" w-100 rounded-top " alt="...">
             </div>
 
-            <div class="mt-2 p-2 text-start">
+            <div class="p-2 text-start">
 
               <div class="d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill text-primary" viewBox="0 0 16 16">
@@ -1559,7 +1625,7 @@
               <img src="Media/Rectangle-30.png" class=" w-100 rounded-top " alt="...">
             </div>
 
-            <div class="mt-2 p-2 text-start">
+            <div class="p-2 text-start">
 
               <div class="d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill text-primary" viewBox="0 0 16 16">
@@ -1586,7 +1652,7 @@
               <img src="Media/Rectangle-27.png" class=" w-100 rounded-top " alt="...">
             </div>
 
-            <div class="mt-2 p-2 text-start">
+            <div class=" p-2 text-start">
 
               <div class="d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill text-primary" viewBox="0 0 16 16">
@@ -1610,19 +1676,19 @@
     <footer class="footer bg-secondary">
       <div class="container-fluid py-4 containerfooterlg">
         <div class="text-center">
-          <img src="Media/Vector-3.svg" alt="logoFooter" class="mt-4 ">
+          <img src="Media/Vector-3.svg" alt="logoFooter">
         </div>
         <hr class="text-white m-0 mt-5 fDupla">
         <div class="contentFooter mt-2">
           <div class="containerAbout">
-            <h2 class="tertiary fw-bold">About Us</h2>
+            <h2 class="m-0 mt-5 tertiary fw-bold">About Us</h2>
             <hr class="text-white m-0 ">
             <p class="m-0 text-white mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida sodales orci, at pellentesque neque ullamcorper at. <br>
               Etiam gravida fringilla ex quis congue.
             </p>
             
-            <div class="SocialMedia d-flex gap-2 mt-3">
+            <div class="SocialMedia d-flex gap-3 mt-3">
               <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook text-white" viewBox="0 0 16 16">
                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
@@ -1645,7 +1711,7 @@
           </div>
           <div class="mt-4 linksFooter">
             <h2 class="tertiary fw-bold">Quick Links</h2>
-            <hr class="text-white m-0 ">
+            <hr class="text-white m-0 w-50">
 
             <ul class="list-group">
               <li class="list-unstyled">
@@ -1736,7 +1802,7 @@
 
           <div class="mt-4 linksFooter">
             <h2 class="tertiary fw-bold">Services</h2>
-            <hr class="text-white m-0 ">
+            <hr class="text-white m-0 w-50">
 
             <ul class="list-group">
               <li class="list-unstyled">
@@ -1823,6 +1889,14 @@
       </div>
 
       <hr class="text-white mt-4">
+
+      <div class="btnHome">
+        <a href="#" class="text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-arrow-up text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+        </a>
+      </div>
 
       <div class="container-fluid text-center">
         <span class="text-white textCopy font-family-base">Copyright &copy; 2026 globlevisa All Rights Reserved</span>
