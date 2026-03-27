@@ -321,7 +321,7 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
 
 .carousel-indicators [data-bs-target] {
   opacity: 1;
-  height: 4px;
+  height: 6px;
   border-radius: 9px;
   border-top: unset;
   border-bottom: unset;
@@ -359,6 +359,14 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
     height: auto;
     border-radius: 20px;
   }
+}
+
+button:focus,
+button:focus-visible,
+.btnSearch:focus,
+.btnSearch:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 // Línea horizontal personalizada
@@ -728,6 +736,11 @@ background-color: #472d30 !important;
 // Responsive fix para el navbar
 
 @media (max-width: 375px) {
+
+  .backcard p {
+    margin-top: 20px;
+  }
+
   .navbar-brand img {
     width: 120px;
   }
@@ -744,6 +757,15 @@ background-color: #472d30 !important;
 }
 
 @include media-breakpoint-up(md) {
+
+  .backcard p {
+    font-size: 14px;
+  }
+
+  svg.bi.bi-search.text-white {
+    width: 20px;
+    height: 20px;
+  }
 
   .offcanvas.show {
     width: 50%;
