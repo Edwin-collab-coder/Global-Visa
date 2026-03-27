@@ -61,7 +61,6 @@ $grid-breakpoints: (
   --bs-dropdown-border-color:none;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -596,7 +595,7 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 }
 
 .SocialMedia svg {
-  width: 20px;
+  width: 54px;
   height: 20px;
 }
 
@@ -738,7 +737,12 @@ background-color: #472d30 !important;
 
   .offcanvas.show {
     width: 50%;
-}
+  }
+
+  .SocialMedia svg {
+    width: 27px;
+    height: 27px;
+  }
 
   .btnSearch {
     width: 30px;
