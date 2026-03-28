@@ -68,6 +68,10 @@ $grid-breakpoints: (
   --bs-dropdown-border-color:none;
 }
 
+.offcanvas-body.fw-bold {
+  font-size: 21px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -100,8 +104,18 @@ a.navbar-brand img {
   width: 150px;
 }
 
+.countriescard:hover {
+  background-color: #ffecc2 !important;
+} 
+
+.closeOffcanvas {
+  float: inline-end;
+}
+
 .offcanvas-header {
+  display: unset;
   border-left: 1px solid $primary;
+  padding: 25px 32px 10px 10px;
 }
 
 .offcanvas-body {
@@ -241,7 +255,7 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
 }
 
 .controlsTestimonial {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .ctrlRTestimonial:hover, .ctrlLTestimonial:hover {
@@ -292,17 +306,9 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
   border-bottom-left-radius: 12px;
 }
 
-.contentcardEducation:hover a {
+.contentcardEducation:hover  .btn-section {
+  background-color: #c04b62 !important;
   color: #fff !important;
-}
-  
-
-.containaercardcontriesmd:hover .btn-section {
-  background-color: #c04b62;
-
-.containaercardcontriesmd .btn-section a {
-  color: #fff !important;
-  }
 }
 
 .btn-section:hover a {
@@ -345,10 +351,6 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
   svg {
     margin: 0;
   }
-}
-
-.tittleAbout {
-  max-width: 263px; // Ajustado para móvil
 }
 
 .pictureAbout {
@@ -565,7 +567,7 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 
 .styleCard {
   border-radius: 15px;
-  width: 234px;
+  width: 240px;
   border: 1px solid #000;
   box-shadow: 7px 6px #000;
 }
@@ -602,7 +604,7 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 
 .dateCard {
   border-top-right-radius: 5px;
-  top: 48%;
+  top: 42.3%;
 }
 
 .cardNew:hover {
@@ -633,10 +635,6 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 
 .offcanvas.show {
   width: 80%;
-}
-
-.offcanvas-header {
-  gap: 27px;
 }
 
 .offcanvas-header img {
@@ -737,6 +735,11 @@ background-color: #472d30 !important;
 
 @media (max-width: 375px) {
 
+  .tittleAbout {
+  max-width: 263px; // Ajustado para móvil
+  }
+
+
   .backcard p {
     margin-top: 20px;
   }
@@ -758,6 +761,42 @@ background-color: #472d30 !important;
 
 @include media-breakpoint-up(md) {
 
+  .titleNews p {
+    font-size: 18px;
+  }
+
+  .dateCard {
+    top: 51.7%;
+  }
+
+  .contentCardTestimonial {
+    width: 290px;
+  }
+
+  .socialContainer {
+    bottom: 22px;
+  }
+
+  .infoPerson {
+    gap: 26px;
+  }    
+
+  .containerTeam img {
+    width: 100%;
+  }
+
+  .contentAbout {
+    width: 90%;
+  }
+
+  .tittleAbout {
+  max-width: 100%; // Ajustado para móvil
+  }
+
+  .containerhero h2 {
+  font-size: 46px;
+  }
+
   .backcard p {
     font-size: 14px;
   }
@@ -772,8 +811,8 @@ background-color: #472d30 !important;
   }
 
   .SocialMedia svg {
-    width: 27px;
-    height: 27px;
+    width: 37px;
+    height: 37px;
   }
 
   .btnSearch {
@@ -855,7 +894,7 @@ background-color: #472d30 !important;
   .ctrlL,.ctrlR {
     top: auto;
     left: 83%;
-    bottom: 390px;
+    bottom: 375px;
   }
 
   .fDupla {
@@ -903,7 +942,7 @@ background-color: #472d30 !important;
   .ctrlLeducation,.ctrlReducation {
     top: unset;
     left: 83%;
-    bottom: 480px;
+    bottom: 534px;
   }
 
   .cardWorkflow {
@@ -929,12 +968,12 @@ background-color: #472d30 !important;
   .ctrlRTestimonial, .ctrlLTestimonial {
     top: auto;
     left: 83%;
-    bottom: 480px;
+    bottom: 534px;
   }
 
   .containercardTestimonial {
     display: flex;
-    gap: 67px;
+    gap: 80px;
   }
 
   .shadowCardTestimonial {
@@ -942,7 +981,7 @@ background-color: #472d30 !important;
   }
 
   .titleNews {
-    width: 68%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -960,8 +999,18 @@ background-color: #472d30 !important;
   .contentFooter {
     display: flex;
     flex-wrap: wrap;
-    gap: 47px;
+    gap: 36px;
     align-items: baseline;
+    font-size: 18px;
+  }
+
+  p.m-0.text-white.mt-2 {
+    margin-top: 25px !important;
+  }
+
+  .SocialMedia.d-flex.gap-3.mt-3 {
+    margin-top: 55px !important;
+    gap: 37px !important;
   }
 
   .containerAbout {
@@ -985,6 +1034,20 @@ background-color: #472d30 !important;
     bottom: 50%;
     left: 75%;
     width: max-content;
+  }
+
+  .btnHome {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btnHome svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .textCopy {
+    font-size: 21px;
   }
 
 }
