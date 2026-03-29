@@ -84,4 +84,73 @@ btnEnviar.addEventListener('click', function () {
   bsCollapse.hide(); // esto quita automáticamente la clase "show"
 });
 
+let lastScroll = 0;
+const topbar = document.querySelector('.containertopBar');
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  let currentScroll = window.pageYOffset;
+  let windowWidth = window.innerWidth;
+
+  if (currentScroll > 50) {
+    topbar.classList.add('hide-topbar');
+    navbar.style.top = "0";
+  } else {
+    topbar.classList.remove('hide-topbar');
+    // Aplica solo si el ancho >= 1024px
+    if (windowWidth >= 1024) {
+      navbar.style.top = "39px";
+    } else {
+      navbar.style.top = ""; // o el valor que tenga por defecto en pantallas pequeñas
+    }
+  }
+});
+
+// const btnHome = document.querySelector('.btnHome');
+
+// window.addEventListener('scroll', () => {
+//     const scrollTop = window.scrollY;
+//     const docHeight = document.body.scrollHeight - window.innerHeight;
+//     const scrollPercent = (scrollTop / docHeight) * 100;
+
+//     // Mostrar el botón solo al hacer scroll
+//     if (scrollTop > 50) {
+//         btnHome.classList.add('show');
+//     } else {
+//         btnHome.classList.remove('show');
+//     }
+
+//     // Llenar borde según scroll
+//     btnHome.style.setProperty('--scroll-fill', scrollPercent + '%');
+// });
+
+const btnHome = document.querySelector('.btnHome');
+const circle = btnHome.querySelector('.progress-ring__circle');
+
+const radius = circle.r.baseVal.value;
+const circumference = 2 * Math.PI * radius;
+
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = circumference;
+
+function setProgress(percent) {
+  const offset = circumference - (percent / 100) * circumference;
+  circle.style.strokeDashoffset = offset;
+}
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+
+  // Mostrar el botón solo al hacer scroll
+  if (scrollTop > 50) {
+    btnHome.classList.add('show');
+  } else {
+    btnHome.classList.remove('show');
+  }
+
+  setProgress(scrollPercent);
+});
+
 });

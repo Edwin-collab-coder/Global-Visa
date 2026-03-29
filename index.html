@@ -23,7 +23,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill text-white" viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
               </svg>
-              <a href="#"><span class="text-white">55 Main Street, "nd block,Malborne ,Australia</span></a>
+             <span class="text-white">55 Main Street, "nd block,Malborne ,Australia</span>
             </div>
           </div>
           
@@ -56,7 +56,7 @@
             
             <div class="d-flex containerLinks float-end gap-3">
               <div>
-                <a href="#" class="text-decoration-none">
+                <a href="#" class="text-decoration-none hover-line">
                   <span class="text-white">
                     Help
                   </span>
@@ -64,14 +64,14 @@
               </div>
 
               <div>
-                <a href="#" class="text-decoration-none">
+                <a href="#" class="text-decoration-none hover-line">
                   <span class="text-white">
                     Support
                   </span>
                 </a>
               </div>
               <div>
-                <a href="#" class="text-decoration-none">
+                <a href="#" class="text-decoration-none hover-line">
                   <span class="text-white">
                     Faq's
                   </span>
@@ -92,12 +92,15 @@
 
             <ul class="list-unstyled m-0 d-flex gap-3">
               <li>
-                <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle" href="#" role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown nav-dropdown d-flex justify-content-center">
+                  <a class="nav-link-custom dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Home
                   </a>
-                
-                  <div class="dropdown-menu z-2" aria-labelledby="dropdownMenuLink">
+
+                  <div class="dropdown-menu nav-dropdown-menu">
                     <a class="dropdown-item" href="#"><span class="text-primary">Home</span></a>
                     <a class="dropdown-item" href="#"><span class="text-primary">Home2</span></a>
                   </div>
@@ -105,16 +108,19 @@
               </li>
 
               <li>
-                <a href="#" class="text-decoration-none font-family-base text-black">About Us</a>
+                <a href="#" class="nav-link-custom text-black">About Us</a>
               </li>
 
               <li>
-                <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle text-black " href="#" role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown nav-dropdown d-flex justify-content-center">
+                  <a class="nav-link-custom dropdown-toggle text-black"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Visa
                   </a>
-                
-                  <div class="dropdown-menu z-2" aria-labelledby="dropdownMenuLink">
+
+                  <div class="dropdown-menu nav-dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -123,12 +129,15 @@
               </li>
 
               <li>
-                <div class="dropdown show d-flex justify-content-center">
-                  <a class="text-decoration-none font-family-base dropdown-toggle text-black href="# role="button" id="dropdownMenuLink"   aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown nav-dropdown d-flex justify-content-center">
+                  <a class="nav-link-custom dropdown-toggle text-black"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Pages
                   </a>
-                
-                  <div class="dropdown-menu z-2" aria-labelledby="dropdownMenuLink">
+
+                  <div class="dropdown-menu nav-dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -137,11 +146,12 @@
               </li>
 
               <li>
-                <a href="#" class="text-decoration-none font-family-base text-black">Blog</a>
+                <a href="#" class="nav-link-custom text-black">Blog</a>
               </li>
 
+
               <li>
-                <a href="#" class="text-decoration-none font-family-base text-black">Contact</a>
+                <a href="#" class="nav-link-custom text-black">Contact</a>
               </li>
             </ul>
           </div>
@@ -558,7 +568,7 @@
             </div>
 
             <div class="backcard position-absolute bg-white border border-primary">
-              <div class="mt-3 contentback-card">
+              <div class="contentback-card">
                 <div class=" d-flex flex-column">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill text-primary" viewBox="0 0 16 16">
                     <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
@@ -1942,8 +1952,12 @@
       <hr class="text-white mt-4">
 
       <div class="btnHome">
-        <a href="#" class="text-decoration-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-arrow-up text-primary" viewBox="0 0 16 16">
+        <a href="#" class="text-decoration-none position-absolute" aria-label="Scroll to top">
+          <svg class="progress-ring" width="60" height="60" viewBox="0 0 60 60">
+            <circle class="progress-ring__background" stroke="#ddd" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+            <circle class="progress-ring__circle" stroke="#c04b62" stroke-width="4" fill="transparent" r="26" cx="30" cy="30" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#c04b62" class="bi bi-arrow-up" viewBox="0 0 16 16" style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%)">
             <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
           </svg>
         </a>
