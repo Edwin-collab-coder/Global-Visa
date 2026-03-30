@@ -1048,6 +1048,10 @@ background-color: #472d30 !important;
 
 @include media-breakpoint-up(lg) {
 
+  .navbar .container-fluid {
+    max-width: 1024px;
+  }
+
   .dateCard {
     top: 43.7%;
   }
@@ -1215,7 +1219,7 @@ background-color: #472d30 !important;
   color: white;
   text-decoration: none;
 }
- 
+
 .hover-line::after {
   content: "";
   position: absolute;
@@ -1496,9 +1500,7 @@ background-color: #472d30 !important;
   }
 
   .navbar {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1024px;       
+    width: 100%;     
   }
 
   .containerheroopBar {    
@@ -1519,6 +1521,10 @@ background-color: #472d30 !important;
 
 @include media-breakpoint-up(xl) {
 
+  .containertopBar {
+    max-width: 1024px;
+  }
+
   .xl {
     display: block;
   }
@@ -1529,18 +1535,6 @@ background-color: #472d30 !important;
 
   .contentHero {
     width: 50%;
-  }
-
-  .decor-left {
-    width: 1%;
-    top: 12%;
-    left: 12%;
-  }
-
-  .decor-right {
-      width: 10%;
-      top: 19%;
-      right: 12%;
   }
 
   .cardonehero {
