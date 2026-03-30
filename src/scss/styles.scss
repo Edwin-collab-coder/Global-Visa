@@ -45,15 +45,17 @@ $grid-breakpoints: (
   box-shadow: none !important;
 }
 
-// Estilos personalizados
-/* necesario para submenú */
 .dropdown-submenu {
   position: relative;
 }
 
+.showbr {
+  display: none;
+}
+
 .dropdown-submenu .dropdown-menu {
   display: none;
-  position: static;   /* 👈 clave: ya no absolute */
+  position: static;  
   margin: 0;
   padding-left: 15px;
   border: none;
@@ -135,12 +137,10 @@ a.navbar-brand img {
   transform: rotate(45deg);
 }
 
-/* transición suave */
 .dropdown-submenu > a svg {
   transition: transform 0.5s ease;
 }
 
-/* cuando está abierto */
 .dropdown-submenu > a[aria-expanded="true"] svg {
   transform: rotate(45deg);
 }
@@ -194,14 +194,12 @@ a.navbar-brand img {
 
 }
 
-/* texto arriba del efecto */
 .split-btn a {
   position: relative;
   z-index: 2;
   display: block;
 }
 
-/* capas base */
 .split-btn::before,
 .split-btn::after {
   content: "";
@@ -214,14 +212,12 @@ a.navbar-brand img {
   transition: transform 0.5s ease;
 }
 
-/* izquierda */
 .split-btn::before {
   left: 0;
   transform: scaleY(0);
   transform-origin: bottom;
 }
 
-/* derecha */
 .split-btn::after {
   right: 0;
   transform: scaleY(0);
@@ -261,7 +257,7 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
 .ctrlRTestimonial:hover, .ctrlLTestimonial:hover {
   background-color: #472d30 !important;
 }
-/* hover activo */
+
 .split-btn:hover::before {
   transform: scaleY(1);
 }
@@ -270,7 +266,6 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
   transform: scaleY(1);
 }
 
-/* texto en hover */
 .split-btn:hover a {
   color: #fff !important;
 }
@@ -286,7 +281,6 @@ svg.bi.bi-chevron-right , svg.bi.bi-chevron-left {
   transform: translateX(0);
 }
 
-/* delays controlados */
 .delay-1 { transition-delay: 0.2s; }
 .delay-2 { transition-delay: 0.5s; }
 .delay-3 { transition-delay: 0.9s; }
@@ -371,14 +365,12 @@ button:focus-visible,
   box-shadow: none !important;
 }
 
-// Línea horizontal personalizada
 .custom-hr {
   height: 4px;
   background-color: #000;
   opacity: 1;
 }
 
-// Botones
 .btn-section {
   font-size: 11px;
   width: max-content;
@@ -388,13 +380,11 @@ button:focus-visible,
   font-family: Georgia;
 }
 
-// Ajustes de espaciado para móvil
 .container-fluid {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-// Cards y elementos visuales
 .card {
   border-radius: 20px;
   overflow: hidden;
@@ -613,7 +603,7 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 .shadowCardTestimonial {
   border-radius: 15px;
   height: 342px;
-  max-width: 270px;
+  width: 270px;
 }
 
 .dateCard {
@@ -804,7 +794,7 @@ background-color: #472d30 !important;
   }
 
   .tittleAbout {
-  max-width: 100%; // Ajustado para móvil
+  max-width: 100%; 
   }
 
   .containerhero h2 {
@@ -1058,6 +1048,163 @@ background-color: #472d30 !important;
 
 @include media-breakpoint-up(lg) {
 
+  .dateCard {
+    top: 43.7%;
+  }
+  
+  .ctrlLTestimonial, .ctrlRTestimonial {
+    top: auto;
+    left: 83%;
+    bottom: 420px;
+  }
+
+  .shadowCardTestimonial {
+    border-radius: 15px;
+    height: 342px;
+    width: 330px; 
+  }
+
+  .contentCardTestimonial {
+    width: 340px;
+  }
+
+  .containertestimoniallg {
+    padding-bottom: 0px !important;
+  }
+
+  .controlsTestimonial {
+    margin-top: 0;
+  }
+
+  .contentCardTestimonial h2 {
+    font-size: 20px !important;
+  }
+
+  .titleTestimonial h2 {
+    width: 80%;
+  }
+
+  .cardWorkflow h2 {
+    font-size: 19px;
+    font-weight: 700; 
+  }
+
+  .hrworkflowlg {
+    width: 75%;
+    margin: 0 auto !important;
+  }
+
+  .contentEducation {
+    width: 60%;
+  }
+
+  .showbr {
+    display: block;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .contentEducation h2 {
+    font-size: 35px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .mt-5.bg-primary.mx-auto.btn-team.btn-section {
+    margin-top: 5rem !important;
+  }
+
+  .infoPerson {
+    gap: 50px;
+  }
+
+  .infoPerson h3 {
+    font-size: 19px;
+  }
+
+  .socialContainer {
+    bottom: 54px;
+    left: 11px;
+  }
+
+  .containerTeam img {
+    width: 93%;
+  }
+
+  .styleCard img {
+    top: 38px;
+    left: 30px;
+  }
+
+  .styleCard {
+    height: 245px;
+  }
+
+  .titleTeam h2 {
+    font-size: 36px;
+  }
+
+  .textCountries {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .titleCountries h2 {
+    font-size: 41px;
+  }
+
+  .containercountrieslg {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  svg.bi.bi-currency-exchange.text-primary.me-2 {
+    width: 41px;
+    height: 53px;
+  }
+  .containerCardsChoose h2 {
+    font-size: 47px;
+  }
+
+  .imgcontainerchooseus .postServices {
+    transform: translate(-50%, -50%);
+    top: 54%;
+    left: 48%;
+  }
+
+  .imgcontainerchooseus .border {
+    border: 6px solid #dee2e6 !important;
+  }
+
+  .imgcontainerchooseus img {
+    width: 80%;
+  }
+
+  .imgcontainerchooseus {
+    text-align: center;
+  }
+
+  .imgcontainerchooseus h2 {
+    font-size: 46px;
+  }
+
+  .contentChooseUs {
+    width: 54%;
+  }
+
+  .contentChooseUs h2 {
+    font-size: 36px;
+  }
+
+  h2.fs-md-1.fw-bold {
+    font-size: 36px;
+  }
+
   .containerRedes svg:hover {
     color: #000 !important;
   }
@@ -1068,15 +1215,13 @@ background-color: #472d30 !important;
   color: white;
   text-decoration: none;
 }
-
+ 
 .hover-line::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; /* distancia debajo del texto */
-  width: 0%;
-  height: 2px; /* grosor de la línea */
-  background-color: white; /* color de la línea */
+  bottom: -3px;
+  background-color: white; 
   transition: width 0.3s ease;
 }
 
@@ -1151,8 +1296,8 @@ background-color: #472d30 !important;
 
   .decor-left {
     width: 1.5%;
-    top: 12%;
-    left: 4%;
+    top: 8%;
+    right: 101%;
   }
 
   .containeraboutlg {
@@ -1191,11 +1336,11 @@ background-color: #472d30 !important;
 
   .decor-right-choose {
     width: 1.5%;
-    top: 3%;
+    top: 6%;
   }
 
   .decor-left-choose {
-    left: 4%;
+    left: 0%;
     width: 16%;
     top: 4%;
   }
@@ -1227,27 +1372,27 @@ background-color: #472d30 !important;
   }
 
   .decor-left-down {
-    width: 2.5%;
-    top: 65%;
-    left: 4%;
+    width: 2%;
+    top: 73%;
+    right: 100%;
   }
 
   .decor-left-top {
     width: 17.5%;
-    top: 7%;
-    left: 3%;
+    bottom: 75%;
+    right: 86%;
   }
 
   .decor-right-top {
     width: 17.5%;
-    top: 7%;
-    right: 2%;    
+    bottom: 75%;
+    left: 85%;
   }
 
   .decor-right-down {
-    width: 2.5%;
-    top: 65%;
-    right: 2%;    
+    width: 2%;
+    top: 73%;
+    left: 100%;
   }
 
   .team {
@@ -1285,27 +1430,27 @@ background-color: #472d30 !important;
   }
 
   .decor-left-top-workflow {
-    width: 15.5%;
-    top: 3%;
-    left: 3%;
+    width: 13.5%;
+    bottom: 85%;
+    right: 89%;
   }
 
   .decor-left-down-workflow {
-    width: 2%;
-    top: 65%;
-    left: 2%;
+    width: 1.7%;
+    top: 79%;
+    right: 101%;
   }
 
   .decor-right-top-workflow {
-    width: 15.5%;
-    top: 3%;
-    right: 3%;
+    width: 13.5%;
+    bottom: 85%;
+    left: 89%;
   }
 
   .decor-right-down-workflow {
-    width: 2%;
-    top: 65%;
-    right: 2%; 
+    width: 1.7%;
+    top: 79%;
+    left: 101%;
   }
 
   .testimonial {
