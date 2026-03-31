@@ -1,9 +1,9 @@
 # node modules
 node_modules/
-
 # Gulp output
 dist/
-
 # system files
 .DS_Store
 Thumbs.db
+.vscode
+__MACOSX
