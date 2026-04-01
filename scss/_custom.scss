@@ -685,11 +685,11 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 }
 
 .cardonehero {
-<<<<<<<< HEAD:scss/_custom.scss
+
   background-image: url("/img/Rectangle-1.png");
-========
+
   background-image: url("../../img/Rectangle-1.png");
->>>>>>>> 9add2d4 (Ya gulpifico):scss/custom.scss
+
 }
 
 .cardtwohero {
@@ -697,11 +697,10 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 }
 
 .cardthreehero {
-<<<<<<<< HEAD:scss/_custom.scss
+
   background-image: url("/img/Rectangle-1-1.png");
-========
-  background-image: url("/img/");
->>>>>>>> 9add2d4 (Ya gulpifico):scss/custom.scss
+
+
 }
 
 .decor {
@@ -1508,13 +1507,9 @@ background-color: #472d30 !important;
   }
 
   .navbar {
-<<<<<<< HEAD:src/scss/styles.scss
+
     width: 100%;     
-=======
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1024px;
->>>>>>> origin/alann:scss/_custom.scss
+    
   }
 
   .containerheroopBar {
