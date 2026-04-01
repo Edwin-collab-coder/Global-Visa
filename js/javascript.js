@@ -6310,6 +6310,7 @@
 
 }));
 
+<<<<<<< HEAD
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -6467,3 +6468,5 @@ window.addEventListener('scroll', () => {
 });
 
 });
+=======
+>>>>>>> 9add2d4 (Ya gulpifico)
