@@ -9361,11 +9361,11 @@ a.navbar-brand img {
 
 .offcanvas-header {
   display: unset;
-  border-left: 1px solid #c04b62;
+  border-left: 1px solid green;
   padding: 25px 32px 10px 10px; }
 
 .offcanvas-body {
-  border-left: 1px solid #c04b62; }
+  border-left: 1px solid green; }
 
 .navbar-nav a {
   color: #000;
@@ -9538,7 +9538,7 @@ svg.bi.bi-chevron-right, svg.bi.bi-chevron-left {
 
 .carousel-indicators .active {
   width: 45px;
-  background-color: #c04b62 !important; }
+  background-color: green !important; }
 
 .btnSearch {
   border-radius: 50%;
@@ -9592,7 +9592,7 @@ button:focus-visible,
   overflow: hidden; }
 
 .bg-primary {
-  background-color: #c04b62 !important; }
+  background-color: green !important; }
 
 .contentFooter span {
   color: #fff !important; }
@@ -9687,7 +9687,7 @@ input[type="search"]::-webkit-search-cancel-button {
   transform-origin: 50% 50%; }
 
 .text-primary {
-  color: #c04b62 !important; }
+  color: green !important; }
 
 .text-secondary {
   color: #472d30 !important; }
@@ -9833,13 +9833,13 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
   background-position: center; }
 
 .cardonehero {
-  background-image: url("../../img/Rectangle-1.png"); }
+  background-image: url(""); }
 
 .cardtwohero {
-  background-image: url("/img/Rectangle-2.png"); }
+  background-image: url(""); }
 
 .cardthreehero {
-  background-image: url("/img/"); }
+  background-image: url(""); }
 
 .decor {
   display: none;

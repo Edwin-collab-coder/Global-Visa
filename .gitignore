@@ -6,8 +6,4 @@ dist/
 .DS_Store
 Thumbs.db
 .vscode
-<<<<<<< HEAD
 __MACOSX
-=======
-_MACOSX
->>>>>>> 9add2d4 (Ya gulpifico)

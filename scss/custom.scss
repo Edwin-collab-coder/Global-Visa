@@ -4,7 +4,7 @@ $font-weight-bold: 700;
 
 $body-font-family: 'Arial', sans-serif;
 
-$primary: #c04b62;
+$primary: green;
 $secondary: #472d30;
 
 $grid-breakpoints: (
@@ -685,23 +685,19 @@ svg.bi.bi-arrow-up-right-circle-fill.text-primary {
 }
 
 .cardonehero {
-<<<<<<<< HEAD:scss/_custom.scss
-  background-image: url("/img/Rectangle-1.png");
-========
-  background-image: url("../../img/Rectangle-1.png");
->>>>>>>> 9add2d4 (Ya gulpifico):scss/custom.scss
+
+  background-image: url("");
+
 }
 
 .cardtwohero {
-  background-image: url("/img/Rectangle-2.png");
+  background-image: url("");
 }
 
 .cardthreehero {
-<<<<<<<< HEAD:scss/_custom.scss
-  background-image: url("/img/Rectangle-1-1.png");
-========
-  background-image: url("/img/");
->>>>>>>> 9add2d4 (Ya gulpifico):scss/custom.scss
+
+  background-image: url("");
+
 }
 
 .decor {
@@ -1508,13 +1504,9 @@ background-color: #472d30 !important;
   }
 
   .navbar {
-<<<<<<< HEAD:src/scss/styles.scss
+
     width: 100%;     
-=======
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1024px;
->>>>>>> origin/alann:scss/_custom.scss
+
   }
 
   .containerheroopBar {
