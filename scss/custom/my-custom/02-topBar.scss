@@ -1,0 +1,46 @@
+// TopBar Section
+.topBar {
+  display: none;
+}
+
+.containertopBar {
+  max-width: 1024px;
+}
+
+.hide-topbar {
+  transform: translateY(-100%);
+}
+
+.containerRedes svg:hover {
+  color: #000 !important;
+}
+
+.hover-line {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.hover-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.hover-line:hover::after {
+  width: 100%;
+}
+
+@include media-breakpoint-up(lg) {
+  .topBar {
+    display: block;
+  }
+  
+  .topBar .container-fluid {
+    padding: 0 3rem;
+  }
+}

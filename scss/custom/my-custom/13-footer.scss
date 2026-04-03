@@ -1,0 +1,97 @@
+// Footer Section
+.footer {
+  padding: 3rem;
+}
+
+.containerfooterlg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.contentFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  align-items: baseline;
+  font-size: 18px;
+  
+  span {
+    color: #fff !important;
+    
+    &:hover {
+      color: #c04b62 !important;
+    }
+  }
+}
+
+.containerAbout {
+  width: 35%;
+}
+
+p.m-0.text-white.mt-2 {
+  margin-top: 25px !important;
+}
+
+.SocialMedia.d-flex.gap-3.mt-3 {
+  margin-top: 55px !important;
+  gap: 37px !important;
+  
+  svg {
+    width: 37px;
+    height: 37px;
+    
+    &:hover {
+      color: #c04b62 !important;
+    }
+  }
+}
+
+.textCopy {
+  font-size: 14px;
+}
+
+.btnHome {
+  position: fixed;
+  right: 30px;
+  bottom: 43px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  user-select: none;
+  
+  &.show {
+    opacity: 1;
+  }
+}
+
+.progress-ring {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  transform: rotate(-90deg);
+}
+
+.progress-ring__background {
+  stroke: #eee;
+  stroke: transparent !important;
+}
+
+.progress-ring__circle {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s ease;
+  transform-origin: 50% 50%;
+}
+
+@include media-breakpoint-up(md) {
+  .textCopy {
+    font-size: 21px;
+  }
+  
+  .SocialMedia svg {
+    width: 37px;
+    height: 37px;
+  }
+}

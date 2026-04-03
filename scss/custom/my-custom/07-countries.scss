@@ -1,0 +1,103 @@
+// Countries Section
+.countries {
+  padding: 3rem;
+}
+
+.containercountrieslg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 !important;
+}
+
+.contentCountrier {
+  display: flex;
+}
+
+.titleCountries {
+  h2 {
+    font-size: 41px;
+  }
+}
+
+.textCountries {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.containaercardcontriesmd {
+  display: flex;
+  gap: 20px;
+}
+
+.countriescard {
+  &:hover {
+    background-color: #ffecc2 !important;
+  }
+}
+
+.ctrlL, .ctrlR {
+  left: 34%;
+  top: 24px;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  
+  &:hover {
+    background-color: #fff !important;
+    
+    svg.bi.bi-chevron-right,
+    svg.bi.bi-chevron-left {
+      color: #c04b62 !important;
+    }
+  }
+}
+
+svg.bi.bi-chevron-right,
+svg.bi.bi-chevron-left {
+  width: 34px;
+  height: 34px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 83%;
+}
+
+#carouselExampleCaptionsCountries .carousel-inner {
+  width: auto;
+}
+
+.decor-left-down {
+  width: 2%;
+  top: 73%;
+  right: 100%;
+}
+
+.decor-left-top {
+  width: 17.5%;
+  bottom: 75%;
+  right: 86%;
+}
+
+.decor-right-top {
+  width: 17.5%;
+  bottom: 75%;
+  left: 85%;
+}
+
+.decor-right-down {
+  width: 2%;
+  top: 73%;
+  left: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .ctrlL, .ctrlR {
+    top: auto;
+    left: 83%;
+    bottom: 375px;
+  }
+}

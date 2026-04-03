@@ -1,0 +1,89 @@
+// Testimonial Section
+.testimonial {
+  padding: 3rem;
+}
+
+.containertestimoniallg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-bottom: 0px !important;
+}
+
+.titleTestimonial {
+  display: flex;
+  
+  h2 {
+    width: 80%;
+  }
+}
+
+.ptestimonial {
+  display: flex;
+  align-items: center;
+}
+
+.containercardTestimonial {
+  display: flex;
+  gap: 80px;
+}
+
+.shadowCardTestimonial {
+  border-radius: 15px;
+  height: 342px;
+  width: 330px;
+}
+
+.contentCardTestimonial {
+  bottom: 7px;
+  left: 43px;
+  border-radius: 17px;
+  width: 340px;
+  
+  h2 {
+    font-size: 20px !important;
+  }
+}
+
+.controlsTestimonial {
+  margin-top: 0;
+}
+
+.ctrlLTestimonial, .ctrlRTestimonial {
+  left: 34%;
+  top: 24px;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  
+  &:hover {
+    background-color: #472d30 !important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .controlsTestimonial {
+    margin-top: 6rem;
+  }
+  
+  .ctrlRTestimonial, .ctrlLTestimonial {
+    top: auto;
+    left: 83%;
+    bottom: 534px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .ctrlLTestimonial, .ctrlRTestimonial {
+    top: auto;
+    left: 83%;
+    bottom: 420px;
+  }
+  
+  .shadowCardTestimonial {
+    height: 342px;
+    width: 330px;
+  }
+}

@@ -1,0 +1,59 @@
+// News Section
+.news {
+  padding: 3rem;
+  
+  .btn-section:hover {
+    background-color: #c04b62 !important;
+  }
+}
+
+.containernewslg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.titleNews {
+  width: 80%;
+  margin: 0 auto;
+  
+  p {
+    font-size: 18px;
+  }
+}
+
+.containerCardNews {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.cardNew {
+  width: 335px;
+  box-shadow: 0px 1px 13px 1px #000;
+  border-radius: 13px;
+  
+  &:hover {
+    background-color: #472d30;
+    border-radius: 12px;
+    color: #fff !important;
+  }
+}
+
+.dateCard {
+  border-top-right-radius: 5px;
+  top: 43.7%;
+}
+
+@include media-breakpoint-up(md) {
+  .dateCard {
+    top: 51.7%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .dateCard {
+    top: 43.7%;
+  }
+}

@@ -1,0 +1,59 @@
+// About Section
+.about {
+  padding: 3rem;
+}
+
+.containeraboutlg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+}
+
+.contentAbout {
+  width: 90%;
+}
+
+.tittleAbout {
+  max-width: 100%;
+}
+
+.pictureAbout {
+  margin: 22px 0;
+  width: 100%;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 117px;
+  }
+}
+
+.decor {
+  display: none;
+  position: absolute;
+  z-index: 0;
+}
+
+.decor-right {
+  width: 15%;
+  top: 4%;
+  right: 0%;
+}
+
+.decor-left {
+  width: 1.5%;
+  top: 8%;
+  right: 101%;
+}
+
+.btn-about:hover {
+  background-color: #472d30 !important;
+}
+
+@include media-breakpoint-up(lg) {
+  .decor {
+    display: block;
+  }
+}

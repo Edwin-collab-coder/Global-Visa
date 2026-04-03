@@ -1,0 +1,98 @@
+// Team Section
+.team {
+  padding: 3rem;
+}
+
+.containerteamlg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.titleTeam {
+  width: 580px;
+  margin: 0 auto;
+  
+  h2 {
+    font-size: 36px;
+  }
+}
+
+.containerTeam {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  justify-content: center;
+  
+  img {
+    width: 93%;
+  }
+}
+
+.styleCard {
+  border-radius: 15px;
+  width: 240px;
+  border: 1px solid #000;
+  box-shadow: 7px 6px #000;
+  height: 245px;
+  
+  &:hover {
+    background-color: #472d30 !important;
+  }
+  
+  img {
+    top: 38px;
+    left: 30px;
+    position: relative;
+  }
+}
+
+.infoPerson {
+  top: 0px;
+  padding: 5px;
+  align-items: baseline;
+  gap: 50px;
+  color: #fff;
+  
+  h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+  }
+}
+
+.socialContainer {
+  bottom: 54px;
+  left: 11px;
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    
+    &:hover {
+      color: #c04b62 !important;
+    }
+  }
+}
+
+.mt-5.bg-primary.mx-auto.btn-team.btn-section {
+  margin-top: 5rem !important;
+}
+
+@include media-breakpoint-up(md) {
+  .containerTeam img {
+    width: 100%;
+  }
+  
+  .infoPerson {
+    gap: 26px;
+    
+    h3 {
+      font-size: 15px;
+    }
+  }
+  
+  .socialContainer {
+    bottom: 22px;
+  }
+}

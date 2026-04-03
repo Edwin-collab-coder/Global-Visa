@@ -1,0 +1,85 @@
+// WorkFlow Section
+.workFlow {
+  padding: 3rem;
+  
+  .container-fluid {
+    padding: 0px;
+  }
+}
+
+.containerworkFlowlg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.titleworkFlow {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hrworkflowlg {
+  width: 75%;
+  margin: 0 auto !important;
+}
+
+.containerCardWorkflow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.cardWorkflow {
+  border: 2px solid #c04b62;
+  margin: 0px;
+  width: 31%;
+  border-radius: 20px;
+  box-shadow: 0px 8px #c04b62;
+  
+  h2 {
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+
+.decor-left-top-workflow {
+  width: 13.5%;
+  bottom: 85%;
+  right: 89%;
+}
+
+.decor-left-down-workflow {
+  width: 1.7%;
+  top: 79%;
+  right: 101%;
+}
+
+.decor-right-top-workflow {
+  width: 13.5%;
+  bottom: 85%;
+  left: 89%;
+}
+
+.decor-right-down-workflow {
+  width: 1.7%;
+  top: 79%;
+  left: 101%;
+}
+
+@include media-breakpoint-up(md) {
+  .containerCardWorkflow {
+    flex-wrap: wrap;
+  }
+  
+  .cardWorkflow {
+    width: 31%;
+    margin: 0px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .containerCardWorkflow {
+    flex-wrap: nowrap;
+  }
+}

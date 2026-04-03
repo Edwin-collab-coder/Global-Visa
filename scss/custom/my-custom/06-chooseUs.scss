@@ -1,0 +1,93 @@
+// Choose Us Section
+.chooseUs {
+  padding: 3rem;
+}
+
+.containerChooselg {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.containerchooseUs {
+  display: flex;
+  gap: 15px;
+}
+
+.imgcontainerchooseus {
+  text-align: center;
+  top: 140px;
+  
+  img {
+    width: 80%;
+  }
+}
+
+.postServices {
+  transform: translate(-50%, -50%);
+  top: 54%;
+  left: 48%;
+  border-radius: 16px;
+}
+
+.iconChoose {
+  border-radius: 5px;
+  padding: 4px;
+  height: 33px;
+}
+
+.contentChooseUs {
+  width: 54%;
+  
+  h2 {
+    font-size: 36px;
+  }
+}
+
+.cardChoose {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 15px;
+  
+  &:hover {
+    background-color: #c04b62 !important;
+    color: #fff;
+    
+    svg {
+      color: #FFF !important;
+    }
+  }
+}
+
+.containerCardsChoose {
+  gap: 25px;
+  display: flex;
+  align-items: flex-end;
+  
+  h2 {
+    font-size: 47px;
+  }
+}
+
+.containercardmd {
+  display: flex;
+  align-items: flex-end;
+  gap: 17px;
+}
+
+.decor-right-choose {
+  width: 1.5%;
+  top: 6%;
+}
+
+.decor-left-choose {
+  left: 0%;
+  width: 16%;
+  top: 4%;
+}
+
+@include media-breakpoint-up(lg) {
+  .imgcontainerchooseus .border {
+    border: 6px solid #dee2e6 !important;
+  }
+}
