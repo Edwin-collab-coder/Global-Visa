@@ -1,7 +1,5 @@
   const carousel = document.querySelector('.carousel');
 
-  if (!carousel) return;
-
   carousel.addEventListener('slide.bs.carousel', function () {
     const active = this.querySelector('.carousel-item.active');
 
