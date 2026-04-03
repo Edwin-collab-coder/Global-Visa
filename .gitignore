@@ -1,4 +1,10 @@
-# node modules
+#minify
+/scss/style.scss
+/css/style.min.css
+/js/javascript.js
+/js/script.min.js
+package-lock.json
+#node modules
 node_modules/
 # Gulp output
 dist/
@@ -7,3 +13,4 @@ dist/
 Thumbs.db
 .vscode
 __MACOSX
+f
