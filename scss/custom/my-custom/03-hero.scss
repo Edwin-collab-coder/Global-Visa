@@ -67,7 +67,19 @@
 .containerhero {
   width: 100%;
   margin: 0 auto;
-  max-width: 1024px;
+}
+
+@include media-breakpoint-up (xl) {
+
+  .contentHero {
+    max-width: 1024px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .containerhero {
+    max-width: unset;
+  }
 }
 
 @include media-breakpoint-up(lg) {

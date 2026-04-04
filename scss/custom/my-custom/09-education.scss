@@ -59,6 +59,25 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+
+  .contentEducation h2 {
+    font-size: 27px;
+  }
+
+  .contentEducation {
+    width: 100%;
+  }
+
+  .titleEducaction {
+    display: unset;
+  }
+
+  .contentcardEducation h2 {
+    font-size: 20px;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .ctrlLeducation, .ctrlReducation {
     top: unset;

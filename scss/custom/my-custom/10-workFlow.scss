@@ -67,6 +67,27 @@
   left: 101%;
 }
 
+@include media-breakpoint-up(sm) {
+
+  .cardWorkflow {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .titleworkFlow {
+    font-size: 21px;
+  }
+
+  .containerCardWorkflow {
+    display: unset;
+  }
+
+  .titleworkFlow {
+    width: 100%;
+  }
+
+}
+
 @include media-breakpoint-up(md) {
   .containerCardWorkflow {
     flex-wrap: wrap;

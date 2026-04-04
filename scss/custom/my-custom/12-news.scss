@@ -46,6 +46,47 @@
   top: 43.7%;
 }
 
+@include media-breakpoint-up(sm) {
+  
+  .containernewslg {
+    margin-top: 100px;
+  }
+
+  .iconCard {
+    margin-top: 10px;
+  }
+
+  .titleNews p {
+    margin-top: 20px;
+  }
+
+  .titleNews h2 {
+    font-size: 26px;
+  }
+
+  .dateCard {
+  border-top-right-radius: 5px;
+  top: 39.2%;
+  }
+
+  .cardNew {
+    margin: 27px auto;
+    width: 85%;
+    box-shadow: 0px 0px 5px #c4cfd8;
+    border-radius: 18px;
+  }
+
+  .containerCardNews {
+    margin-top: 10px;
+    display: unset;
+  }
+
+  .titleNews {
+    width: 100%;
+    margin: 0 auto;
+}
+}
+
 @include media-breakpoint-up(md) {
   .dateCard {
     top: 51.7%;

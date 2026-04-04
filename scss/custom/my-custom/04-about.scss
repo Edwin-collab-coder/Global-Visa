@@ -52,6 +52,17 @@
   background-color: #472d30 !important;
 }
 
+@include media-breakpoint-up (sm) {
+
+  .about {
+    padding: 0;
+  }
+
+  .containeraboutlg {
+    display: unset
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .decor {
     display: block;

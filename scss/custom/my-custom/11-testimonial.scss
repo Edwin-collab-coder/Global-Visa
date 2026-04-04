@@ -63,6 +63,51 @@
   }
 }
 
+@include media-breakpoint-up(sm){
+
+  .controlsTestimonial {
+    margin-top: 50px;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.5rem;
+  }
+
+  .contentCardTestimonial p {
+    font-size: 14px;
+  }
+
+  .contentCardTestimonial {
+    bottom: 7px;
+    left: 32px;
+    border-radius: 17px;
+    width: 235px;
+}
+
+  .decorationcardTestimonial {
+    width: 34px;
+    margin: 7px;
+  }
+
+  .shadowCardTestimonial {
+    height: 342px;
+    width: 244px;
+  }
+
+  .fDupla, .triple {
+    display: none;
+  }
+
+  .titleTestimonial h2 {
+    width: 100%;
+    font-size: 23px;
+}
+
+  .titleTestimonial {
+    display: unset;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .controlsTestimonial {
     margin-top: 6rem;

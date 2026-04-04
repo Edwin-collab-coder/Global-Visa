@@ -1,23 +1,23 @@
-  const carousel = document.querySelector('.carousel');
+const carousel = document.querySelector('.carousel');
 
-  carousel.addEventListener('slide.bs.carousel', function () {
-    const active = this.querySelector('.carousel-item.active');
+carousel.addEventListener('slide.bs.carousel', function () {
+  const active = this.querySelector('.carousel-item.active');
 
-    if (!active) return;
+  if (!active) return;
 
-    active.querySelectorAll('.animate-left').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateX(-40px)';
-    });
+  active.querySelectorAll('.animate-left').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateX(-40px)';
   });
+});
 
-  carousel.addEventListener('slid.bs.carousel', function () {
-    const active = this.querySelector('.carousel-item.active');
+carousel.addEventListener('slid.bs.carousel', function () {
+  const active = this.querySelector('.carousel-item.active');
 
-    if (!active) return;
+  if (!active) return;
 
-    active.querySelectorAll('.animate-left').forEach(el => {
-      el.style.opacity = '1';
-      el.style.transform = 'translateX(0)';
-    });
+  active.querySelectorAll('.animate-left').forEach(el => {
+    el.style.opacity = '1';
+    el.style.transform = 'translateX(0)';
   });
+});

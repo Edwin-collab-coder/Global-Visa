@@ -79,6 +79,12 @@
   margin-top: 5rem !important;
 }
 
+@include media-breakpoint-up(sm) {
+  .containerTeam {
+    display: unset;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .containerTeam img {
     width: 100%;
