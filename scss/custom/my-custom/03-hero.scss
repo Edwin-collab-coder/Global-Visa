@@ -1,10 +1,11 @@
 // Hero Section
-.hero .carousel-indicators {
-  transform: rotate(270deg);
-  bottom: 50%;
-  left: 75%;
-  width: max-content;
-}
+
+.contentHero {
+    max-width: 1024px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 
 .carousel-indicators [data-bs-target] {
   opacity: 1;
@@ -20,7 +21,11 @@
   width: 45px;
   background-color: $primary !important;
 }
-
+.contentHero {
+    max-width: 1024px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 .animate-right {
   opacity: 0;
   transform: translateX(40px);
@@ -37,13 +42,13 @@
 .delay-3 { transition-delay: 0.9s; }
 
 .containerhero h2 {
-  font-size: 46px;
+  font-size: 38px;
 }
 
 .imgruleshero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 537px;
   background-position: center;
 }
 
@@ -60,8 +65,8 @@
 }
 
 .contentHero {
-  top: 30px;
-  width: 50%;
+  top: 67px;
+  width: 100%;
 }
 
 .containerhero {

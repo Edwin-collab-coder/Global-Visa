@@ -7,16 +7,11 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
-  padding: 0 !important;
-}
-
-.contentCountrier {
-  display: flex;
 }
 
 .titleCountries {
   h2 {
-    font-size: 41px;
+    font-size: 27px;
   }
 }
 
@@ -58,12 +53,12 @@
 
 svg.bi.bi-chevron-right,
 svg.bi.bi-chevron-left {
-  width: 34px;
-  height: 34px;
+  width: 21px;
+  height: 21px;
 }
 
 .carousel-control-next, .carousel-control-prev {
-  width: 83%;
+  width: 90%;
 }
 
 #carouselExampleCaptionsCountries .carousel-inner {
@@ -100,4 +95,12 @@ svg.bi.bi-chevron-left {
     left: 83%;
     bottom: 375px;
   }
+}
+
+@include media-breakpoint-up (lg) {
+  .titleCountries {
+  h2 {
+    font-size: 41px;
+  }
+}
 }

@@ -10,16 +10,14 @@
 }
 
 .containerchooseUs {
-  display: flex;
   gap: 15px;
 }
 
 .imgcontainerchooseus {
   text-align: center;
-  top: 140px;
-  
   img {
-    width: 80%;
+    height: 400px;
+    width: 100%;
   }
 }
 
@@ -28,6 +26,7 @@
   top: 54%;
   left: 48%;
   border-radius: 16px;
+  width: 160px;
 }
 
 .iconChoose {
@@ -37,10 +36,10 @@
 }
 
 .contentChooseUs {
-  width: 54%;
+  width: 100%;
   
   h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
@@ -61,18 +60,10 @@
 
 .containerCardsChoose {
   gap: 25px;
-  display: flex;
-  align-items: flex-end;
-  
+
   h2 {
     font-size: 47px;
   }
-}
-
-.containercardmd {
-  display: flex;
-  align-items: flex-end;
-  gap: 17px;
 }
 
 .decor-right-choose {
@@ -86,7 +77,37 @@
   top: 4%;
 }
 
+
+@include media-breakpoint-up (md) {
+  .containercardmd {
+  display: flex;
+  align-items: flex-end;
+  gap: 17px;
+  }
+}
+
+
 @include media-breakpoint-up(lg) {
+
+  .containerCardsChoose {
+  gap: 25px;
+  display: flex;
+  align-items: flex-end;
+  
+  h2 {
+    font-size: 47px;
+  }
+} 
+
+  .imgcontainerchooseus {
+    text-align: center;
+    top: 140px;
+    
+    img {
+      width: 80%;
+    }
+  }
+
   .imgcontainerchooseus .border {
     border: 6px solid #dee2e6 !important;
   }

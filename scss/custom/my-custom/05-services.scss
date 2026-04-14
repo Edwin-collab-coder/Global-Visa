@@ -12,24 +12,24 @@
 }
 
 .contentServices {
-  width: 630px;
+  width: 100%;
   margin: 0 auto;
   
   h2 {
-    width: 466px;
+    width: 100%;
     margin: 0 auto;
+    font-size: 29px;
   }
 }
 
 .containercardServices {
-  display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: 15px;
 }
 
 .cardmdServices {
-  width: 31%;
+  width: 100%;
   position: relative;
 }
 
@@ -65,8 +65,8 @@
   left: 25px;
   
   svg {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -80,6 +80,29 @@ svg.bi.bi-mortarboard-fill.text-primary {
 }
 
 @include media-breakpoint-up(lg) {
+
+  .btncardservices {
+  bottom: 14px;
+  border-radius: 50%;
+  background-color: #FFF;
+  left: 25px;
+  
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+  .contentServices {
+  width: 630px;
+  margin: 0 auto;
+  
+  h2 {
+    width: 466px;
+    margin: 0 auto;
+  }
+}
+
   .btncardservices {
     left: 34px;
   }
