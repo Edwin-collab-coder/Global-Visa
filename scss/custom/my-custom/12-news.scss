@@ -38,6 +38,11 @@
     background-color: #472d30;
     border-radius: 12px;
     color: #fff !important;
+
+    .btnNews {
+      background-color: #c04b62;
+
+    }
   }
 }
 
@@ -49,7 +54,7 @@
 @include media-breakpoint-up(sm) {
   
   .containernewslg {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .iconCard {

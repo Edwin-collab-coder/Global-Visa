@@ -42,13 +42,17 @@
 .delay-3 { transition-delay: 0.9s; }
 
 .containerhero h2 {
-  font-size: 38px;
+  font-size: 31px;
+}
+
+.hrHero {
+  width: 87%;
 }
 
 .imgruleshero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 537px;
+  height: 510px;
   background-position: center;
 }
 
@@ -65,8 +69,9 @@
 }
 
 .contentHero {
-  top: 67px;
+  top: 50px;
   width: 100%;
+  padding: 0px 20px;
 }
 
 .containerhero {

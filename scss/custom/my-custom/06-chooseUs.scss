@@ -26,7 +26,7 @@
   top: 54%;
   left: 48%;
   border-radius: 16px;
-  width: 160px;
+  width: 178px;
 }
 
 .iconChoose {
@@ -39,8 +39,31 @@
   width: 100%;
   
   h2 {
-    font-size: 28px;
+    font-size: 23px;
   }
+}
+
+.contentItem h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.titlecardChoose {
+  align-items: end;
+}
+
+.titlecardChoose svg {
+  width: 40px;
+  height: 40px;
+}
+
+.million {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.countriesButtons {
+  margin-top: 15px;
 }
 
 .cardChoose {

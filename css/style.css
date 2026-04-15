@@ -4,6 +4,7 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #c04b62;
@@ -11857,6 +11858,45 @@ textarea.form-control-lg {
 /*
  * Customs.
  */
+.hr--both::before {
+  font-family: "bootstrap-icons";
+  content: "\f5e3";
+  position: absolute;
+  top: calc(-1 * 9px / 1.3);
+  left: -2px;
+  transform: rotate(90deg);
+  font-size: 9px;
+}
+.hr--both::after {
+  font-family: "bootstrap-icons";
+  content: "\f5e3";
+  position: absolute;
+  top: calc(-1 * 9px / 1.3);
+  right: -2px;
+  transform: rotate(30deg);
+  font-size: 9px;
+}
+
+.hr--left::before {
+  font-family: "bootstrap-icons";
+  content: "\f5e3";
+  position: absolute;
+  top: calc(-1 * 9px / 1.3);
+  left: -2px;
+  transform: rotate(90deg);
+  font-size: 9px;
+}
+
+.hr--right::after {
+  font-family: "bootstrap-icons";
+  content: "\f5e3";
+  position: absolute;
+  top: calc(-1 * 9px / 1.3);
+  right: -2px;
+  transform: rotate(30deg);
+  font-size: 9px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11914,9 +11954,24 @@ section {
 }
 
 .custom-hr {
+  border: none;
   height: 1px;
-  background-color: #000;
+  background: #000;
   opacity: 1;
+}
+
+.hr--white {
+  color: #fff;
+}
+
+.hr--small::after {
+  font-family: "bootstrap-icons";
+  content: "\f5e3";
+  position: absolute;
+  top: calc(-1 * 6px / 1.3);
+  right: -2px;
+  transform: rotate(30deg);
+  font-size: 6px;
 }
 
 .btn-section {
@@ -11927,8 +11982,9 @@ section {
   font-weight: 600;
   font-family: Georgia;
 }
-.btn-section:hover a {
-  color: #fff !important;
+.btn-section a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .containerButtons .btn-section:hover {
@@ -12387,6 +12443,10 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   color: #000 !important;
 }
 
+.btnlxquote {
+  display: none;
+}
+
 .hover-line {
   position: relative;
   display: inline-block;
@@ -12466,13 +12526,17 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 .containerhero h2, .containerhero .h2 {
-  font-size: 38px;
+  font-size: 31px;
+}
+
+.hrHero {
+  width: 87%;
 }
 
 .imgruleshero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 537px;
+  height: 510px;
   background-position: center;
 }
 
@@ -12489,8 +12553,9 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 .contentHero {
-  top: 67px;
+  top: 50px;
   width: 100%;
+  padding: 0px 20px;
 }
 
 .containerhero {
@@ -12533,7 +12598,11 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 
 .tittleAbout {
   margin-top: 50px;
-  max-width: 100%;
+  width: 80%;
+}
+
+.tittleAbout h2, .tittleAbout .h2 {
+  font-size: 25px;
 }
 
 .pictureAbout {
@@ -12609,7 +12678,7 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 .contentServices h2, .contentServices .h2 {
   width: 100%;
   margin: 0 auto;
-  font-size: 29px;
+  font-size: 24px;
 }
 
 .containercardServices {
@@ -12717,7 +12786,7 @@ svg.bi.bi-mortarboard-fill.text-primary {
   top: 54%;
   left: 48%;
   border-radius: 16px;
-  width: 160px;
+  width: 178px;
 }
 
 .iconChoose {
@@ -12730,7 +12799,30 @@ svg.bi.bi-mortarboard-fill.text-primary {
   width: 100%;
 }
 .contentChooseUs h2, .contentChooseUs .h2 {
-  font-size: 28px;
+  font-size: 23px;
+}
+
+.contentItem h3, .contentItem .h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.titlecardChoose {
+  align-items: end;
+}
+
+.titlecardChoose svg {
+  width: 40px;
+  height: 40px;
+}
+
+.million {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.countriesButtons {
+  margin-top: 15px;
 }
 
 .cardChoose {
@@ -12822,7 +12914,6 @@ svg.bi.bi-mortarboard-fill.text-primary {
 
 .ctrlL, .ctrlR {
   left: 34%;
-  top: 24px;
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -12947,7 +13038,8 @@ svg.bi.bi-chevron-left {
 .infoPerson h3, .infoPerson .h3 {
   color: #fff;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 18px;
+  margin: 0;
 }
 
 .socialContainer {
@@ -13031,14 +13123,13 @@ svg.bi.bi-chevron-left {
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
 }
-.contentcardEducation:hover .btn-section {
+.contentcardEducation:hover .btnNews {
   background-color: #c04b62 !important;
   color: #fff !important;
 }
 
 .ctrlLeducation, .ctrlReducation {
   left: 34%;
-  top: 24px;
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -13215,7 +13306,6 @@ svg.bi.bi-chevron-left {
 
 .ctrlLTestimonial, .ctrlRTestimonial {
   left: 34%;
-  top: 24px;
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -13320,6 +13410,9 @@ svg.bi.bi-chevron-left {
   border-radius: 12px;
   color: #fff !important;
 }
+.cardNew:hover .btnNews {
+  background-color: #c04b62;
+}
 
 .dateCard {
   border-top-right-radius: 5px;
@@ -13328,7 +13421,7 @@ svg.bi.bi-chevron-left {
 
 @media (min-width: 375px) {
   .containernewslg {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .iconCard {
     margin-top: 10px;
@@ -13406,6 +13499,10 @@ p.m-0.text-white.mt-2 {
 }
 .SocialMedia.d-flex.gap-3.mt-3 svg:hover {
   color: #c04b62 !important;
+}
+
+.hr-footer {
+  width: 70%;
 }
 
 .textCopy {

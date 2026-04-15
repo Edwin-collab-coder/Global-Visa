@@ -1,0 +1,33 @@
+@mixin hr-triangles(
+  $left: true,
+  $right: true,
+  $icon: "\f5e3",
+  $size: 9px
+) {
+
+  $top-adjust: calc(-1 * #{$size} / 1.3);
+
+  @if $left {
+    &::before {
+      font-family: "bootstrap-icons";
+      content: $icon;
+      position: absolute;
+      top: $top-adjust;
+      left: -2px;
+      transform: rotate(90deg);
+      font-size: $size;
+    }
+  }
+
+  @if $right {
+    &::after {
+      font-family: "bootstrap-icons";
+      content: $icon;
+      position: absolute;
+      top: $top-adjust;
+      right: -2px;
+      transform: rotate(30deg);
+      font-size: $size;
+    }
+  }
+}
