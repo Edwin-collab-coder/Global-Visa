@@ -64,6 +64,7 @@
 
 .countriesButtons {
   margin-top: 15px;
+  justify-content: center;
 }
 
 .cardChoose {
@@ -102,15 +103,31 @@
 
 
 @include media-breakpoint-up (md) {
+  .containerchooseUs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .contentChooseUs {
+    width: 50%;
+  }
+  
+  .imgcontainerchooseus {
+    width: 50%;
+  }
+  
   .containercardmd {
-  display: flex;
-  align-items: flex-end;
-  gap: 17px;
+    display: flex;
+    align-items: flex-end;
+    gap: 17px;
   }
 }
 
-
 @include media-breakpoint-up(lg) {
+
+  .containerChooselg {
+    max-width: 1024px;
+  }
 
   .containerCardsChoose {
   gap: 25px;

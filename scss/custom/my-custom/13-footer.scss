@@ -9,9 +9,9 @@
 .contentFooter {
   display: flex;
   flex-wrap: wrap;
-  gap: 27px;
   align-items: baseline;
   font-size: 18px;
+  gap: 13px;
   
   span {
     color: #fff !important;
@@ -45,7 +45,7 @@ p.m-0.text-white.mt-2 {
 }
 
 .hr-footer {
-  width: 70%;
+  width: 85%;
 }
 
 .textCopy {
@@ -89,27 +89,46 @@ p.m-0.text-white.mt-2 {
 @include media-breakpoint-up (sm) {
 
     .SocialMedia.d-flex.gap-3.mt-3 svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 
   .SocialMedia.d-flex.gap-3.mt-3 {
-    margin-top: 31px !important;
-    gap: 28px !important;
+    margin-top: 16px !important;
+    gap: 17px !important;
   }
 
   .contentFooter {
     h2 {
-      font-size: 27px;
+      font-size: 21px;
     }
   }
 
   .containerAbout {
     width: 100%;
+    margin-top: 15px;
   }
+
+  .contentFooter p.text-white.mt-3 {
+    font-size: 14px;
+    opacity: 60%;
+}
 }
 
 @include media-breakpoint-up(md) {
+
+  .contentFooter {
+    flex-direction: row;
+  }
+  
+  .containerAbout {
+    width: 35%;
+  }
+  
+  .linksFooter {
+    width: auto;
+  }
+  
   .textCopy {
     font-size: 21px;
   }
@@ -117,6 +136,12 @@ p.m-0.text-white.mt-2 {
   .SocialMedia svg {
     width: 37px;
     height: 37px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .containerfooterlg {
+    max-width: 1024px;
   }
 }
 

@@ -74,9 +74,19 @@
   background-color: #472d30 !important;
 }
 
-svg.bi.bi-mortarboard-fill.text-primary {
+.backcard svg {
   width: 60px;
   height: 60px;
+}
+
+@include media-breakpoint-up(md){
+   .containercardServices {
+    display: flex;
+  }
+
+  .cardmdServices {
+    width: 31%;
+  } 
 }
 
 @include media-breakpoint-up(lg) {
@@ -99,6 +109,7 @@ svg.bi.bi-mortarboard-fill.text-primary {
   
   h2 {
     width: 466px;
+    font-size: 36px;
     margin: 0 auto;
   }
 }

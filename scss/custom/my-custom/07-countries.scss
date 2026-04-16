@@ -11,7 +11,7 @@
 
 .titleCountries {
   h2 {
-    font-size: 27px;
+    font-size: 23px;
   }
 }
 
@@ -32,8 +32,11 @@
   }
 }
 
+.countriescard p {
+  margin-top: 10px;
+}
+
 .ctrlL, .ctrlR {
-  left: 34%;
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -89,6 +92,29 @@ svg.bi.bi-chevron-left {
 }
 
 @include media-breakpoint-up(md) {
+
+  .contentCountrier {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .titleCountries {
+    width: 50%;
+  }
+  
+  .textCountries {
+    width: 50%;
+  }
+  
+  .countriescard {
+    width: auto;
+  }
+  
+  .fDupla {
+    display: block;
+  }
+
   .ctrlL, .ctrlR {
     top: auto;
     left: 83%;
@@ -97,9 +123,15 @@ svg.bi.bi-chevron-left {
 }
 
 @include media-breakpoint-up (lg) {
-  .titleCountries {
-  h2 {
+  .containercountrieslg {
+    max-width: 1024px;
+  }
+  
+  .titleCountries h2 {
     font-size: 41px;
   }
-}
+  
+  .triple {
+    display: block;
+  }
 }

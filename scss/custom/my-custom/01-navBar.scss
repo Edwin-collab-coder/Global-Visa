@@ -111,6 +111,16 @@ a.navbar-brand img {
   }
 }
 
+a.nav-link {
+  font-size: 15px;
+}
+
+a.dropdown-item {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 0 4px 16px;
+}
+
 .nav-link {
   svg {
     transition: transform 0.5s ease;

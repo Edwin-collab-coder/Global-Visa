@@ -52,7 +52,7 @@
 .imgruleshero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 510px;
+  height: 490px;
   background-position: center;
 }
 
@@ -79,6 +79,32 @@
   margin: 0 auto;
 }
 
+@include media-breakpoint-up(md) {
+  .hero .carousel-indicators {
+    transform: rotate(270deg);
+    bottom: 50%;
+    left: 75%;
+    width: max-content;
+  }
+  
+  .contentHero {
+    width: 80%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .contentHero {
+    width: 50%;
+    max-width: 1024px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cardonehero, .cardtwohero, .cardthreehero {
+    padding: 3rem;
+  }
+}
+
 @include media-breakpoint-up (xl) {
 
   .contentHero {
@@ -92,12 +118,3 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
-  .contentHero {
-    width: 50%;
-  }
-  
-  .cardonehero, .cardtwohero, .cardthreehero {
-    padding: 3rem;
-  }
-}

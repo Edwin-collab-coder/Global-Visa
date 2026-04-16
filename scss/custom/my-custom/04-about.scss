@@ -1,6 +1,6 @@
 // About Section
 .about {
-  padding: 3rem;
+  padding: 0;
 }
 
 .containeraboutlg {
@@ -53,36 +53,59 @@
   right: 101%;
 }
 
-.btn-about:hover {
-  background-color: #472d30 !important;
+.btn-about::before {
+  background-color: #472d30;
 }
 
-@include media-breakpoint-up (sm) {
+.containeraboutlg {
+  display: unset
+}
 
+@include media-breakpoint-up(md) {
   .about {
     padding: 0;
   }
-
-  .containeraboutlg {
-    display: unset
-  }
-}
-
-@include media-breakpoint-up(lg) {
-
-  .pictureAbout {
-  margin: 22px 0;
-  width: 100%;
   
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
+  .pictureAbout img {
     margin-top: 117px;
   }
 }
 
+@include media-breakpoint-up(lg) {
+  .about {
+    padding: 3rem;
+  }
+  
+  .containeraboutlg {
+    display: flex;
+    max-width: 1024px;
+  }
+  
+  .contentAbout {
+    width: 50%;
+  }
+  
+  .pictureAbout {
+    width: 50%;
+    
+    img {
+      margin-top: 117px;
+    }
+  }
+  
   .decor {
     display: block;
+  }
+  
+  .decor-right {
+    width: 15%;
+    top: 4%;
+    right: 0%;
+  }
+  
+  .decor-left {
+    width: 1.5%;
+    top: 8%;
+    right: 101%;
   }
 }

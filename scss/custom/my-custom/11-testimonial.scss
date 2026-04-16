@@ -50,7 +50,6 @@
 }
 
 .ctrlLTestimonial, .ctrlRTestimonial {
-  left: 34%;
   position: relative;
   border-radius: 50%;
   width: 40px;
@@ -65,7 +64,8 @@
 @include media-breakpoint-up(sm){
 
   .controlsTestimonial {
-    margin-top: 50px;
+    margin-top: 90px;
+    justify-content: center;
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -117,6 +117,40 @@
     left: 83%;
     bottom: 534px;
   }
+
+    .titleTestimonial {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+    h2 {
+      width: 60%;
+      font-size: 28px;
+    }
+  }
+  
+  .ptestimonial {
+    width: 40%;
+  }
+  
+  .containercardTestimonial {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .fDupla {
+    display: block;
+  }
+  
+  .controlsTestimonial {
+    margin-top: 6rem;
+  }
+  
+  .ctrlLTestimonial, .ctrlRTestimonial {
+    position: relative;
+    left: 83%;
+    top: -50px;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -129,5 +163,26 @@
   .shadowCardTestimonial {
     height: 342px;
     width: 330px;
+  }
+
+    .containertestimoniallg {
+    max-width: 1024px;
+  }
+  
+  .shadowCardTestimonial {
+    width: 330px;
+  }
+  
+  .contentCardTestimonial {
+    width: 340px;
+    left: 43px;
+  }
+  
+  .triple {
+    display: block;
+  }
+  
+  .titleTestimonial h2 {
+    font-size: 36px;
   }
 }

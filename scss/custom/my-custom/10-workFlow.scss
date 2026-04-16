@@ -1,10 +1,6 @@
 // WorkFlow Section
 .workFlow {
   padding: 3rem;
-  
-  .container-fluid {
-    padding: 0px;
-  }
 }
 
 .containerworkFlowlg {
@@ -24,7 +20,7 @@
 }
 
 .containerCardWorkflow {
-  display: flex;
+  margin-top: 20px;
   flex-wrap: nowrap;
   align-items: flex-end;
   gap: 16px;
@@ -38,9 +34,14 @@
   box-shadow: 0px 8px #c04b62;
   
   h2 {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 700;
   }
+}
+
+.contentCardWorkflow {
+  margin-top: 10px;
+  padding: 16px 16px 28px;
 }
 
 .decor-left-top-workflow {
@@ -67,40 +68,61 @@
   left: 101%;
 }
 
-@include media-breakpoint-up(sm) {
+.cardWorkflow {
+  width: 88%;
+  margin: 0 auto;
+}
 
-  .cardWorkflow {
-    width: 80%;
-    margin: 0 auto;
-  }
+.titleworkFlow {
+  font-size: 21px;
+}
 
-  .titleworkFlow {
-    font-size: 21px;
-  }
-
-  .containerCardWorkflow {
-    display: unset;
-  }
-
-  .titleworkFlow {
-    width: 100%;
-  }
-
+.titleworkFlow {
+  width: 100%;
 }
 
 @include media-breakpoint-up(md) {
   .containerCardWorkflow {
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .cardWorkflow {
-    width: 31%;
-    margin: 0px;
+    width: 45%;
+    margin: 0;
+  }
+  
+  .titleworkFlow {
+    width: 75%;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .containerCardWorkflow {
+    display: flex;
     flex-wrap: nowrap;
+  }
+
+  .containerworkFlowlg {
+    max-width: 1024px;
+  }
+  
+  .containerCardWorkflow {
+    flex-wrap: nowrap;
+  }
+  
+  .cardWorkflow {
+    width: 23%;
+  }
+  
+  .titleworkFlow {
+    width: 50%;
+    font-size: 36px;
+  }
+  
+  .hrworkflowlg {
+    width: 75%;
+    margin: 0 auto !important;
   }
 }
