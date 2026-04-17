@@ -118,6 +118,10 @@ p.m-0.text-white.mt-2 {
 @include media-breakpoint-up(md) {
 
   .contentFooter {
+    gap: 65px;
+  }
+
+  .contentFooter {
     flex-direction: row;
   }
   

@@ -62,6 +62,11 @@
 }
 
 @include media-breakpoint-up(md) {
+
+  .containeraboutlg {
+  display: flex;
+  }
+
   .about {
     padding: 0;
   }

@@ -80,6 +80,25 @@
 }
 
 @include media-breakpoint-up(md){
+
+.backcard p {
+  margin-top: 10px;
+}
+
+.backcard svg {
+  width: 40px;
+  height: 40px;
+}
+
+  .contentServices h2 {
+    margin-top: 7px;
+    font-size: 30px;
+  }
+
+  .contentServices {
+    width: 75%;
+  }
+
    .containercardServices {
     display: flex;
   }

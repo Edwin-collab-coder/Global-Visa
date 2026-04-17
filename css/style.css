@@ -12081,9 +12081,12 @@ button:focus-visible,
 input#gsearch {
   border: 0;
   border-bottom: 3px solid #000;
-  width: 80%;
+  width: 100%;
   background: rgba(255, 255, 255, 0);
   outline: none;
+  text-align: center;
+  font-size: 32px;
+  padding: 0px 0px 15px;
 }
 
 svg.bi.bi-x.text-primary {
@@ -12102,10 +12105,6 @@ input[type=search]::-webkit-search-cancel-button {
   transition: none !important;
 }
 
-.collapse:not(.show) {
-  display: none !important;
-}
-
 .collapse {
   width: 100vw;
   height: 100vh;
@@ -12114,9 +12113,23 @@ input[type=search]::-webkit-search-cancel-button {
   position: fixed;
   z-index: 3;
   background: rgba(255, 255, 255, 0.8784313725);
-  transform: scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  display: none;
+  opacity: 0;
+  visibility: hidden; /* 🔥 faltaba esto */
+  transform: translateY(-15px) scale(0.98);
+  transition: all 0.9s ease;
+}
+
+/* 🔥 ESTADO ABIERTO */
+.collapse.show {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* 🔥 FIX BOOTSTRAP (CLAVE PARA EL CIERRE) */
+.collapse:not(.show) {
+  display: block !important;
 }
 
 .contentCollapse {
@@ -12127,9 +12140,32 @@ input[type=search]::-webkit-search-cancel-button {
   align-items: center;
 }
 
-.collapse.show {
-  transform: scale(1);
-  display: block;
+.contentCollapse input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 32px;
+  text-align: center;
+  background: transparent;
+  padding-bottom: 10px;
+}
+
+.contentCollapse::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #c04b62;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.contentCollapse input:focus + *,
+.contentCollapse:focus-within::after {
+  width: 100%;
 }
 
 .no-scroll {
@@ -12155,10 +12191,12 @@ input[type=search]::-webkit-search-cancel-button {
   }
 }
 .navbar {
+  z-index: 20;
   --bs-navbar-toggler-border-color: none;
   background-color: #fff !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   width: 100%;
+  transition: all 0.3s ease;
 }
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   padding: 0 1rem;
@@ -12166,6 +12204,24 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .navbar .containerButtons {
   gap: 10px;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+body.navbar-active {
+  padding-top: 80px;
+}
+
+.navbar-scrolled {
+  position: fixed;
 }
 
 .navbar-toggler {
@@ -12325,10 +12381,12 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   }
 }
 .navbar {
+  z-index: 20;
   --bs-navbar-toggler-border-color: none;
   background-color: #fff !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   width: 100%;
+  transition: all 0.3s ease;
 }
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   padding: 0 1rem;
@@ -12336,6 +12394,24 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 .navbar .containerButtons {
   gap: 10px;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+body.navbar-active {
+  padding-top: 80px;
+}
+
+.navbar-scrolled {
+  position: fixed;
 }
 
 .navbar-toggler {
@@ -12542,12 +12618,6 @@ svg.bi.bi-plus-lg.float-end.text-primary {
     padding: 0 3rem;
   }
 }
-.contentHero {
-  max-width: 1024px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .carousel-indicators [data-bs-target] {
   opacity: 1;
   height: 6px;
@@ -12561,12 +12631,6 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 .carousel-indicators .active {
   width: 45px;
   background-color: #c04b62 !important;
-}
-
-.contentHero {
-  max-width: 1024px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .animate-right {
@@ -12594,6 +12658,10 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 
 .containerhero h2, .containerhero .h2 {
   font-size: 31px;
+}
+
+.titleHero p {
+  margin-top: 16px;
 }
 
 .hrHero {
@@ -12631,14 +12699,37 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 @media (min-width: 768px) {
+  .carousel-indicators [data-bs-target] {
+    height: 9px;
+  }
+  .containerButtons.d-flex.gap-3.animate-right.delay-3 {
+    margin-top: 30px;
+  }
+  p.text-white.animate-right.delay-2 {
+    margin-top: 23px;
+  }
+  .hrHero {
+    width: 100%;
+  }
   .hero .carousel-indicators {
     transform: rotate(270deg);
     bottom: 50%;
-    left: 75%;
+    left: 73%;
     width: max-content;
   }
   .contentHero {
     width: 80%;
+    top: 19%;
+    padding: 0;
+  }
+  .containerhero h2, .containerhero .h2 {
+    font-size: 51px;
+  }
+  .imgruleshero {
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 681px;
+    background-position-x: center;
   }
 }
 @media (min-width: 1024px) {
@@ -12724,6 +12815,9 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 @media (min-width: 768px) {
+  .containeraboutlg {
+    display: flex;
+  }
   .about {
     padding: 0;
   }
@@ -12838,6 +12932,20 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 @media (min-width: 768px) {
+  .backcard p {
+    margin-top: 10px;
+  }
+  .backcard svg {
+    width: 40px;
+    height: 40px;
+  }
+  .contentServices h2, .contentServices .h2 {
+    margin-top: 7px;
+    font-size: 30px;
+  }
+  .contentServices {
+    width: 75%;
+  }
   .containercardServices {
     display: flex;
   }
@@ -12968,6 +13076,25 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 @media (min-width: 768px) {
+  .countriesButtons {
+    margin-top: 15px;
+    justify-content: center;
+    position: absolute;
+    top: -66px;
+    right: 16px;
+  }
+  .postServices {
+    transform: translate(-50%, -50%);
+    top: 61%;
+    left: 103%;
+    border-radius: 16px;
+    width: 179px;
+  }
+  .imgcontainerchooseus img {
+    margin-top: 111px;
+    height: 400px;
+    width: 339px;
+  }
   .containerchooseUs {
     display: flex;
     gap: 15px;
@@ -13095,6 +13222,9 @@ svg.bi.bi-chevron-left {
 }
 
 @media (min-width: 768px) {
+  .titleCountries .h2, .titleCountries h2 {
+    font-size: 30px;
+  }
   .contentCountrier {
     display: flex;
     gap: 30px;
@@ -13111,11 +13241,6 @@ svg.bi.bi-chevron-left {
   }
   .fDupla {
     display: block;
-  }
-  .ctrlL, .ctrlR {
-    top: auto;
-    left: 83%;
-    bottom: 375px;
   }
 }
 @media (min-width: 1024px) {
@@ -13215,10 +13340,19 @@ svg.bi.bi-chevron-left {
   }
 }
 @media (min-width: 768px) {
+  .socialContainer {
+    left: 6px;
+  }
+  .styleCard {
+    left: -12px;
+  }
+  .styleCard:not(:first-child) {
+    margin-top: 0px;
+  }
   .containerTeam {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
   .titleTeam {
     width: 580px;
@@ -13233,7 +13367,7 @@ svg.bi.bi-chevron-left {
     font-size: 15px;
   }
   .socialContainer {
-    bottom: 22px;
+    bottom: 38px;
   }
 }
 @media (min-width: 1024px) {
@@ -13321,20 +13455,25 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 
 @media (min-width: 768px) {
+  .carousel-inner.rounded-4.px-3 {
+    margin-top: 50px;
+  }
+  .containereducationlg .countriesButtons {
+    top: -84px;
+  }
+  .contentEducation .h2, .contentEducation h2 {
+    font-size: 34px;
+  }
   .titleEducaction {
     display: flex;
-    gap: 30px;
     align-items: center;
+    font-size: 15px;
   }
   .contentEducation {
     width: 60%;
   }
   .peducation {
     width: 40%;
-  }
-  .ctrlLeducation, .ctrlReducation {
-    left: 83%;
-    top: -50px;
   }
 }
 @media (min-width: 1024px) {
@@ -13427,14 +13566,22 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 
 @media (min-width: 768px) {
+  .hrworkflow {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .titleworkFlow {
+    font-size: 30px;
+  }
   .containerCardWorkflow {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
   }
   .cardWorkflow {
-    width: 45%;
-    margin: 0;
+    margin: 0px;
+    width: 31%;
   }
   .titleworkFlow {
     width: 75%;
@@ -13471,7 +13618,6 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
-  padding-bottom: 0px !important;
 }
 
 .titleTestimonial {
@@ -13559,13 +13705,13 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   }
 }
 @media (min-width: 768px) {
-  .controlsTestimonial {
-    margin-top: 6rem;
+  .carousel-inner.overflow-visible {
+    margin-top: 30px;
   }
-  .ctrlRTestimonial, .ctrlLTestimonial {
-    top: auto;
-    left: 83%;
-    bottom: 534px;
+  .d-flex.gap-3.controlsTestimonial {
+    position: absolute;
+    top: -137px;
+    right: 16px;
   }
   .titleTestimonial {
     display: flex;
@@ -13577,7 +13723,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
     font-size: 28px;
   }
   .ptestimonial {
-    width: 40%;
+    width: 47%;
   }
   .containercardTestimonial {
     flex-direction: row;
@@ -13586,13 +13732,12 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   .fDupla {
     display: block;
   }
-  .controlsTestimonial {
-    margin-top: 6rem;
+  .titleTestimonial .h2, .titleTestimonial h2 {
+    width: 100%;
+    font-size: 33px;
   }
-  .ctrlLTestimonial, .ctrlRTestimonial {
-    position: relative;
-    left: 83%;
-    top: -50px;
+  .contentTestimonial {
+    width: 50%;
   }
 }
 @media (min-width: 1024px) {
@@ -13704,22 +13849,31 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 
 @media (min-width: 768px) {
-  .titleNews {
+  .titleNewsCard {
     width: 80%;
+    margin: 0 auto;
+  }
+  .titleNews {
+    width: 100%;
   }
   .titleNews h2, .titleNews .h2 {
     font-size: 32px;
   }
   .containerCardNews {
-    flex-direction: row;
+    display: flex;
+    align-items: flex-end;
+    gap: 26px;
     flex-wrap: wrap;
-    justify-content: center;
   }
   .cardNew {
-    width: 45%;
+    width: 48%;
+    margin: 0;
   }
   .dateCard {
-    top: 51.7%;
+    top: 48.8%;
+  }
+  .containernewslg {
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -13843,6 +13997,9 @@ p.m-0.text-white.mt-2 {
   }
 }
 @media (min-width: 768px) {
+  .contentFooter {
+    gap: 65px;
+  }
   .contentFooter {
     flex-direction: row;
   }

@@ -82,10 +82,23 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 
 @include media-breakpoint-up(md) {
+
+.carousel-inner.rounded-4.px-3 {
+    margin-top: 50px;
+}
+
+  .containereducationlg .countriesButtons {
+    top: -84px;
+  }
+
+  .contentEducation .h2, .contentEducation h2 {
+    font-size: 34px;
+  }
+
   .titleEducaction {
     display: flex;
-    gap: 30px;
     align-items: center;
+    font-size: 15px;
   }
   
   .contentEducation {
@@ -95,11 +108,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   .peducation {
     width: 40%;
   }
-  
-  .ctrlLeducation, .ctrlReducation {
-    left: 83%;
-    top: -50px;
-  }
+
 }
 
 @include media-breakpoint-up(lg) {

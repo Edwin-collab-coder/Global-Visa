@@ -82,15 +82,26 @@
 }
 
 @include media-breakpoint-up(md) {
+
+  .hrworkflow {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .titleworkFlow {
+    font-size: 30px;
+  }
+
   .containerCardWorkflow {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
   }
   
   .cardWorkflow {
-    width: 45%;
-    margin: 0;
+    margin: 0px;
+    width: 31%;
   }
   
   .titleworkFlow {

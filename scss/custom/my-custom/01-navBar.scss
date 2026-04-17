@@ -1,9 +1,11 @@
 // NavBar Section
 .navbar {
+  z-index: 20;
   --bs-navbar-toggler-border-color: none;
   background-color: #fff !important;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   width: 100%;
+  transition: all 0.3s ease;
   
   .container-fluid {
     padding: 0 1rem;
@@ -13,6 +15,25 @@
   .containerButtons {
     gap: 10px;
   }
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+}
+
+body.navbar-active {
+  padding-top: 80px; 
+}
+
+.navbar-scrolled {
+  position: fixed;
 }
 
 .navbar-toggler {
@@ -188,6 +209,7 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   .offcanvas.show {
     width: 50%;
   }
+
 }
 
 @include media-breakpoint-up(lg) {

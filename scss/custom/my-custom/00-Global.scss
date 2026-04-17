@@ -161,7 +161,7 @@ button:focus-visible,
   box-shadow: none !important;
 }
 
-// Search styles
+
 .btnSearch {
   border-radius: 50%;
   width: 40px;
@@ -182,9 +182,12 @@ button:focus-visible,
 input#gsearch {
   border: 0;
   border-bottom: 3px solid #000;
-  width: 80%;
+  width: 100%;
   background: #ffffff00;
   outline: none;
+  text-align: center;
+  font-size: 32px;
+  padding: 0px 0px 15px;
 }
 
 svg.bi.bi-x.text-primary {
@@ -203,10 +206,6 @@ input[type="search"]::-webkit-search-cancel-button {
   transition: none !important;
 }
 
-.collapse:not(.show) {
-  display: none !important;
-}
-
 .collapse {
   width: 100vw;
   height: 100vh;
@@ -215,10 +214,27 @@ input[type="search"]::-webkit-search-cancel-button {
   position: fixed;
   z-index: 3;
   background: #ffffffe0;
-  transform: scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  display: none;
+
+  opacity: 0;
+  visibility: hidden; /* 🔥 faltaba esto */
+  transform: translateY(-15px) scale(0.98);
+
+  transition: all 0.9s ease;
 }
+
+/* 🔥 ESTADO ABIERTO */
+.collapse.show {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* 🔥 FIX BOOTSTRAP (CLAVE PARA EL CIERRE) */
+.collapse:not(.show) {
+  display: block !important;
+}
+
 
 .contentCollapse {
   position: relative;
@@ -228,9 +244,32 @@ input[type="search"]::-webkit-search-cancel-button {
   align-items: center;
 }
 
-.collapse.show {
-  transform: scale(1);
-  display: block;
+.contentCollapse input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 32px;
+  text-align: center;
+  background: transparent;
+  padding-bottom: 10px;
+}
+
+.contentCollapse::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #c04b62;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.contentCollapse input:focus + * ,
+.contentCollapse:focus-within::after {
+  width: 100%;
 }
 
 .no-scroll {

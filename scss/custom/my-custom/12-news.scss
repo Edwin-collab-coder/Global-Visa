@@ -87,8 +87,13 @@ top: 38.4%;
 
 @include media-breakpoint-up(md) {
 
-  .titleNews {
+  .titleNewsCard {
     width: 80%;
+    margin: 0 auto;
+  }
+
+  .titleNews {
+    width: 100%;
     
     h2 {
       font-size: 32px;
@@ -96,17 +101,23 @@ top: 38.4%;
   }
   
   .containerCardNews {
-    flex-direction: row;
+    display: flex;
+    align-items: flex-end;
+    gap: 26px;
     flex-wrap: wrap;
-    justify-content: center;
   }
   
   .cardNew {
-    width: 45%;
+    width: 48%;
+    margin: 0;
   }
   
   .dateCard {
-    top: 51.7%;
+    top: 48.8%;
+  }
+
+  .containernewslg {
+    padding-bottom: 50px;
   }
 }
 

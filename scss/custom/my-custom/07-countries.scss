@@ -93,6 +93,10 @@ svg.bi.bi-chevron-left {
 
 @include media-breakpoint-up(md) {
 
+  .titleCountries .h2, .titleCountries h2 {
+    font-size: 30px;
+  }
+
   .contentCountrier {
     display: flex;
     gap: 30px;
@@ -113,12 +117,6 @@ svg.bi.bi-chevron-left {
   
   .fDupla {
     display: block;
-  }
-
-  .ctrlL, .ctrlR {
-    top: auto;
-    left: 83%;
-    bottom: 375px;
   }
 }
 

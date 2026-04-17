@@ -94,10 +94,22 @@
 
 @include media-breakpoint-up(md) {
 
+  .socialContainer {
+    left: 6px;
+  }
+
+  .styleCard {
+    left: -12px;
+  } 
+
+  .styleCard:not(:first-child) {
+    margin-top: 0px;
+  }
+
   .containerTeam {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
   
   .titleTeam {
@@ -117,7 +129,7 @@
   }
   
   .socialContainer {
-    bottom: 22px;
+    bottom: 38px;
   }
 }
 

@@ -7,7 +7,6 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
-  padding-bottom: 0px !important;
 }
 
 .titleTestimonial {
@@ -108,17 +107,18 @@
 }
 
 @include media-breakpoint-up(md) {
-  .controlsTestimonial {
-    margin-top: 6rem;
-  }
-  
-  .ctrlRTestimonial, .ctrlLTestimonial {
-    top: auto;
-    left: 83%;
-    bottom: 534px;
-  }
 
-    .titleTestimonial {
+.carousel-inner.overflow-visible {
+  margin-top: 30px;
+}
+
+  .d-flex.gap-3.controlsTestimonial {
+    position: absolute;
+    top: -137px;
+    right: 16px;
+}
+
+  .titleTestimonial {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -130,7 +130,7 @@
   }
   
   .ptestimonial {
-    width: 40%;
+    width: 47%;
   }
   
   .containercardTestimonial {
@@ -141,16 +141,16 @@
   .fDupla {
     display: block;
   }
-  
-  .controlsTestimonial {
-    margin-top: 6rem;
+
+  .titleTestimonial .h2, .titleTestimonial h2 {
+    width: 100%;
+    font-size: 33px;
   }
-  
-  .ctrlLTestimonial, .ctrlRTestimonial {
-    position: relative;
-    left: 83%;
-    top: -50px;
+
+  .contentTestimonial {
+    width: 50%;
   }
+
 }
 
 @include media-breakpoint-up(lg) {
