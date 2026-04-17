@@ -112,11 +112,38 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 
 @include media-breakpoint-up(lg) {
+
+  .contentEducation {
+    width: 54%;
+  }
+
   .containereducationlg {
     max-width: 1024px;
   }
   
   .contentEducation h2 {
     font-size: 35px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+
+    .contentEducation .h2, .contentEducation h2 {
+        font-size: 37px;
+    }  
+
+  .titleEducaction {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      gap: 186px;
+  }
+
+.contentEducation {
+        width: 45%;
+    }
+
+  .containereducationlg {
+    max-width: 1440px;
   }
 }

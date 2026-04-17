@@ -97,6 +97,10 @@
       margin-top: 117px;
     }
   }
+
+  .pictureAbout img {
+    width: 97%;
+  }
   
   .decor {
     display: block;
@@ -113,4 +117,33 @@
     top: 8%;
     right: 101%;
   }
+}
+
+@include media-breakpoint-up(xl) {
+
+  .decor-left {
+    width: 1.5%;
+    top: 20%;
+    right: 102%;
+  }
+
+  .tittleAbout .h2, .tittleAbout h2 {
+    font-size: 38px;
+  } 
+
+  .tittleAbout {
+    margin-top: 199px;
+    width: 90%;
+  }
+
+  .decor-right {
+    width: 15%;
+    top: 12%;
+    right: 0;
+  }
+
+  .containeraboutlg {
+    max-width: 1440px;
+  }
+
 }

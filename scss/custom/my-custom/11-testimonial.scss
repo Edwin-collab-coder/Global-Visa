@@ -92,7 +92,7 @@
     width: 244px;
   }
 
-  .fDupla, .triple {
+  .containercardTestimonial .fDupla, .containercardTestimonial .triple {
     display: none;
   }
 
@@ -108,9 +108,13 @@
 
 @include media-breakpoint-up(md) {
 
-.carousel-inner.overflow-visible {
+  .containercardTestimonial .fDupla {
+    display: block;
+  }
+
+  .carousel-inner.overflow-visible {
   margin-top: 30px;
-}
+  }
 
   .d-flex.gap-3.controlsTestimonial {
     position: absolute;
@@ -154,11 +158,11 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .ctrlLTestimonial, .ctrlRTestimonial {
-    top: auto;
-    left: 83%;
-    bottom: 420px;
-  }
+
+  .contentCardTestimonial {
+      width: 260px;
+      left: 43px;
+    }
   
   .shadowCardTestimonial {
     height: 342px;
@@ -178,11 +182,28 @@
     left: 43px;
   }
   
-  .triple {
-    display: block;
-  }
-  
   .titleTestimonial h2 {
     font-size: 36px;
   }
+}
+
+@include media-breakpoint-up(xl) {
+
+  .shadowCardTestimonial {
+    width: 328px;
+  }
+
+  .titleTestimonial {
+    display: flex;
+    gap: 215px;
+    align-items: center;
+  }
+
+  .containertestimoniallg {
+    max-width: 1440px;
+  }
+
+   .containercardTestimonial .triple {
+    display: block;
+   }
 }

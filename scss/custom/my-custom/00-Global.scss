@@ -282,8 +282,24 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
+@include media-breakpoint-up(md){
+
+  .btnlxquote {
+  display: none;
+  }
+}
+
 // Responsive
 @include media-breakpoint-up(lg) {
+
+  .btnlxquote {
+  display: none;
+  }
+
+  .container-fluid {
+    padding: 0 3rem;
+  }
+
   h2 {
     font-size: 36px;
   }
@@ -291,9 +307,22 @@ input[type="search"]::-webkit-search-cancel-button {
   .showbr {
     display: block;
   }
+
+  .triple {
+    display: none;
+  }
 }
 
 @include media-breakpoint-up(xl) {
+
+  .container-fluid {
+    padding: 0 5rem;
+  }
+
+  .triple {
+    display: block;
+  }
+
   .containertopBar {
     max-width: 1024px;
   }

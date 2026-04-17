@@ -134,11 +134,51 @@
 }
 
 @include media-breakpoint-up(lg) {
+
+  .bg-primary.mx-auto.btn-about.btn-section {
+    margin-top: 100px;
+  }
+
   .containerteamlg {
     max-width: 1024px;
   }
   
   .titleTeam h2 {
     font-size: 36px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .containerteamlg {
+        max-width: 1440px;
+    }
+
+  .containerTeam img {
+        width: 97%;
+    }
+
+.styleCard img {
+    top: 42px;
+    left: 50px;
+    position: relative;
+}
+
+      .styleCard {
+        left: -12px;
+    }
+
+.styleCard {
+    border-radius: 15px;
+    width: 31%;
+    border: 1px solid #000;
+    box-shadow: 7px 6px #000;
+    height: auto;
+}
+
+  .containerTeam {
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+    gap: 67px;
   }
 }

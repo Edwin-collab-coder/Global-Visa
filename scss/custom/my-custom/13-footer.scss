@@ -117,8 +117,13 @@ p.m-0.text-white.mt-2 {
 
 @include media-breakpoint-up(md) {
 
+  .SocialMedia.d-flex.gap-3.mt-3 svg {
+    width: 30px;
+    height: 25px;
+  }
+
   .contentFooter {
-    gap: 65px;
+    gap: 20px;
   }
 
   .contentFooter {
@@ -130,32 +135,60 @@ p.m-0.text-white.mt-2 {
   }
   
   .linksFooter {
-    width: auto;
+    width: 212px;
   }
   
   .textCopy {
-    font-size: 21px;
+    font-size: 17px;
   }
   
   .SocialMedia svg {
     width: 37px;
     height: 37px;
   }
+
+  .SocialMedia.d-flex.gap-3.mt-3 {
+    position: relative;
+    top: 36px;
+  }
+
+  .position-relative hr-footer w-100{
+    width: 80%;
+  }
 }
 
 @include media-breakpoint-up(lg) {
+
+  .contentFooter .h2, .contentFooter h2{
+    font-size: 21px;
+    width: 75%;
+  }
+
   .containerfooterlg {
     max-width: 1024px;
+  }
+
+  .contentFooter {
+    gap: 54px;
   }
 }
 
 @include media-breakpoint-up(xl) {
 
-  .contentFooter {
-    flex-wrap: nowrap;
+  .linksFooter {
+    width: 201px;
+  }
+
+  .contentFooter .h2, .contentFooter h2 {
+    font-size: 21px;
+    width: 100%;
   }
 
   .containerfooterlg {
-    max-width: unset; 
-  } 
+    max-width: 1440px;
+  }
+
+  .contentFooter {
+    flex-wrap: nowrap;
+  }
 }

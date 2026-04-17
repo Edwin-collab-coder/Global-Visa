@@ -36,7 +36,6 @@
   
   &:hover {
     background-color: #472d30;
-    border-radius: 12px;
     color: #fff !important;
 
     .btnNews {
@@ -122,6 +121,10 @@ top: 38.4%;
 }
 
 @include media-breakpoint-up(lg) {
+
+  .dateCard {
+    top: 39.9%;
+  }
   
   .containernewslg {
     max-width: 1024px;
@@ -139,8 +142,22 @@ top: 38.4%;
   .cardNew {
     width: 32%;
   }
-  
+}
+
+@include media-breakpoint-up(xl){
+
   .dateCard {
-    top: 43.7%;
+    top: 53.3%;
   }
+
+  .titleNewsCard {
+    width: 59%;
+    margin: 0 auto;
+  }
+
+  .containernewslg {
+    max-width: 1440px;
+    margin-top: 20px;
+  }
+
 }

@@ -70,7 +70,7 @@
 
 .cardWorkflow {
   width: 88%;
-  margin: 0 auto;
+  margin: 27px auto;
 }
 
 .titleworkFlow {
@@ -110,6 +110,31 @@
 }
 
 @include media-breakpoint-up(lg) {
+
+  .decor-left-down-workflow {
+    width: 1.7%;
+    top: 65%;
+    right: 97%;
+  }
+
+  .decor-left-top-workflow {
+    width: 13.5%;
+    bottom: 73%;
+    right: 85%;
+  }
+
+  .decor-right-down-workflow {
+    width: 1.7%;
+    top: 66%;
+    left: 97%;
+  }
+
+  .decor-right-top-workflow {
+    width: 13.5%;
+    bottom: 73%;
+    left: 84%;
+  }
+
   .containerCardWorkflow {
     display: flex;
     flex-wrap: nowrap;
@@ -125,6 +150,7 @@
   
   .cardWorkflow {
     width: 23%;
+    height: 308px;
   }
   
   .titleworkFlow {
@@ -136,4 +162,52 @@
     width: 75%;
     margin: 0 auto !important;
   }
+}
+
+@include media-breakpoint-up(xl){
+
+  .decor-left-down-workflow {
+    width: 1.7%;
+    top: 60%;
+    right: 96%;
+  }
+
+  .decor-left-top-workflow {
+    width: 13.5%;
+    bottom: 67%;
+    right: 84%;
+  }
+
+  .decor-right-down-workflow {
+    width: 1.7%;
+    top: 60%;
+    left: 96%;
+  }
+
+  .decor-right-top-workflow {
+    width: 13.5%;
+    bottom: 67%;
+    left: 84%;
+  }
+
+
+  .cardWorkflow {
+      width: 24%;
+      height: 282px;
+  }
+
+  .hrworkflow {
+      width: 50%;
+      margin: 0 auto;
+  }
+
+  .containerworkFlowlg {
+    max-width: 1440px;
+    padding: 80px 80px;
+  }
+
+  .containerCardWorkflow {
+    margin-top: 65px;
+  }
+
 }

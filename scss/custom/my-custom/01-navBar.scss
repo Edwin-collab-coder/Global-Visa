@@ -8,7 +8,6 @@
   transition: all 0.3s ease;
   
   .container-fluid {
-    padding: 0 1rem;
     max-width: 1024px;
   }
   
@@ -213,6 +212,11 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 @include media-breakpoint-up(lg) {
+
+  .navbar .container-fluid {
+    max-width: 1024px;
+  }
+
   .containerListlink {
     display: block;
   }
@@ -220,4 +224,16 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   .navbar-toggler {
     display: none;
   }
+}
+
+@include media-breakpoint-up(xl){
+
+  .navbar .container-fluid {
+    max-width: 1440px;
+  }
+
+  .btnlxquote {
+  display: block;
+  }
+  
 }

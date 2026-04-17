@@ -29,6 +29,7 @@
 }
 
 .cardmdServices {
+  margin-top: 16px;
   width: 100%;
   position: relative;
 }
@@ -110,6 +111,12 @@
 
 @include media-breakpoint-up(lg) {
 
+  .contentServices .h2, .contentServices h2 {
+    width: 475px;
+    font-size: 36px;
+    margin: 0 auto;
+  }
+
   .btncardservices {
   bottom: 14px;
   border-radius: 50%;
@@ -122,18 +129,25 @@
   }
 }
 
-  .contentServices {
-  width: 630px;
-  margin: 0 auto;
-  
-  h2 {
-    width: 466px;
-    font-size: 36px;
-    margin: 0 auto;
-  }
-}
-
   .btncardservices {
     left: 34px;
   }
+}
+
+@include media-breakpoint-up(xl) {
+
+  .services .containerImageServices {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .cardmdServices {
+    margin-top: 53px;
+  }
+
+  .contentServices {
+    width: 66%;
+  }
+
 }

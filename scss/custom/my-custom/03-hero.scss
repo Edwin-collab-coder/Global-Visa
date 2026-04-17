@@ -109,18 +109,20 @@
 
   .imgruleshero {
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 681px;
     background-position-x: center;
   }
 }
 
 @include media-breakpoint-up(lg) {
+
   .contentHero {
-    width: 50%;
+    width: 57%;
     max-width: 1024px;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
+    top: 16%;
   }
   
   .cardonehero, .cardtwohero, .cardthreehero {
@@ -131,8 +133,9 @@
 @include media-breakpoint-up (xl) {
 
   .contentHero {
-    max-width: 1024px;
-    left: 50%;
+    width: 45%;
+    max-width: 1440px;
+    left: 26%; 
     transform: translateX(-50%);
   }
 
