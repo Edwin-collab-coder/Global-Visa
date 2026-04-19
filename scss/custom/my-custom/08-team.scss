@@ -149,31 +149,45 @@
 }
 
 @include media-breakpoint-up(xl) {
+
+  .socialContainer {
+    bottom: 55px;
+    left: 14px;
+  }
+
+  .infoPerson {
+    gap: 127px;
+  }
+
+  .infoPerson .h3, .infoPerson h3 {
+    font-size: 23px;
+  }
+
   .containerteamlg {
-        max-width: 1440px;
-    }
+    max-width: 1440px;
+  }
 
   .containerTeam img {
-        width: 97%;
-    }
+    width: 97%;
+  }
 
-.styleCard img {
+  .styleCard img {
     top: 42px;
     left: 50px;
     position: relative;
-}
+  }
 
-      .styleCard {
-        left: -12px;
-    }
+  .styleCard {
+    left: -12px;  
+  }
 
-.styleCard {
+  .styleCard {
     border-radius: 15px;
     width: 31%;
     border: 1px solid #000;
     box-shadow: 7px 6px #000;
     height: auto;
-}
+  }
 
   .containerTeam {
     display: flex;

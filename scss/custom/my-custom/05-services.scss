@@ -136,6 +136,23 @@
 
 @include media-breakpoint-up(xl) {
 
+  span.text-black.fw-bold {
+    margin-top: 28px;
+  }
+  
+  .contentback-card span {
+    font-size: 27px;
+  }
+
+  .backcard svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .backcard {
+    padding: 2rem;
+  }  
+
   .services .containerImageServices {
     width: 100%;
     margin: 0 auto;

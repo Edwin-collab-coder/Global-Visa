@@ -12801,6 +12801,14 @@ svg.bi.bi-plus-lg.float-end.text-primary {
     max-width: unset;
   }
 }
+@media (min-width: 1920px) {
+  .contentHero {
+    width: 34%;
+    max-width: 1440px;
+    left: 29%;
+    transform: translateX(-50%);
+  }
+}
 .about {
   padding: 0;
 }
@@ -13048,6 +13056,19 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   }
 }
 @media (min-width: 1440px) {
+  span.text-black.fw-bold {
+    margin-top: 28px;
+  }
+  .contentback-card span {
+    font-size: 27px;
+  }
+  .backcard svg {
+    width: 80px;
+    height: 80px;
+  }
+  .backcard {
+    padding: 2rem;
+  }
   .services .containerImageServices {
     width: 100%;
     margin: 0 auto;
@@ -13249,6 +13270,16 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   }
 }
 @media (min-width: 1440px) {
+  .contentChooseUs svg {
+    width: 40px;
+    height: 40px;
+  }
+  .iconChoose {
+    margin-right: 17px;
+    border-radius: 5px;
+    padding: 4px;
+    height: 50px;
+  }
   .cardChoose {
     padding: 17px;
     width: 290px;
@@ -13590,6 +13621,16 @@ svg.bi.bi-chevron-left {
   }
 }
 @media (min-width: 1440px) {
+  .socialContainer {
+    bottom: 55px;
+    left: 14px;
+  }
+  .infoPerson {
+    gap: 127px;
+  }
+  .infoPerson .h3, .infoPerson h3 {
+    font-size: 23px;
+  }
   .containerteamlg {
     max-width: 1440px;
   }
@@ -13729,7 +13770,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 @media (min-width: 1440px) {
   .contentEducation .h2, .contentEducation h2 {
-    font-size: 37px;
+    font-size: 38px;
   }
   .titleEducaction {
     display: flex;

@@ -144,3 +144,12 @@
   }
 }
 
+@include media-breakpoint-up (xxl) {
+  .contentHero {
+    width: 34%;
+    max-width: 1440px;
+    left: 29%;
+    transform: translateX(-50%);
+  }
+}
+
