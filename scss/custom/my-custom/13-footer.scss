@@ -192,3 +192,11 @@ p.m-0.text-white.mt-2 {
     flex-wrap: nowrap;
   }
 }
+
+@include media-breakpoint-up(xxl) {
+  .container-fluid.text-center.p-4 {
+    text-align: start !important;
+    max-width: 1440px;
+    padding: 33px 5rem !important;
+  }
+}

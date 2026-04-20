@@ -148,8 +148,8 @@ svg.bi.bi-chevron-left {
   }
 
   .containercountrieslg {
-      max-width: 1024px;
-      padding: 48px 48px;
+    max-width: 1024px;
+    padding: 48px 48px;
   }
   
   .titleCountries h2 {
@@ -160,6 +160,11 @@ svg.bi.bi-chevron-left {
 
 @include media-breakpoint-up(lx) {
 
+  .containercountrieslg {
+    max-width: 1440px;
+    padding: 53px 69px;
+  }
+
   .decor-left-down {
     width: 1.6%;
     top: 64%;
@@ -168,13 +173,8 @@ svg.bi.bi-chevron-left {
 
   .decor-left-top {
     width: 14.5%;
-    bottom: 68%;
+    bottom: 64%;
     right: 83%;
-  }
-
-  .containercountrieslg {
-    max-width: 1440px;
-    padding: 80px 81px;
   }
 
   .decor-right-down {
@@ -185,7 +185,7 @@ svg.bi.bi-chevron-left {
 
   .decor-right-top {
     width: 14.5%;
-    bottom: 68%;
+    bottom: 63%;
     left: 83%;
   }
 
@@ -195,4 +195,11 @@ svg.bi.bi-chevron-left {
     align-items: center;
   }
   
+}
+
+@include media-breakpoint-up(xxl){
+    .containercountrieslg {
+    max-width: 1440px;
+    padding: 80px 81px;
+  }
 }

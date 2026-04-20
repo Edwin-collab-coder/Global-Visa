@@ -104,6 +104,10 @@
 
 @include media-breakpoint-up (md) {
 
+.h2, .contentChooseUs h2 {
+    font-size: 27px;
+  }
+
   .countriesButtons {
     margin-top: 15px;
     justify-content: center;
@@ -230,7 +234,7 @@
 
   .cardChoose {
     padding: 17px;
-    width: 290px;
+    width: 300px;
     height: 165px;
   }
 

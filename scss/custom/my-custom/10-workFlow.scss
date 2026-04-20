@@ -141,6 +141,7 @@
   }
 
   .containerworkFlowlg {
+    padding: 48px;
     max-width: 1024px;
   }
   
@@ -208,6 +209,14 @@
 
   .containerCardWorkflow {
     margin-top: 65px;
+  }
+
+}
+
+@include media-breakpoint-up(xxl) {
+
+  .titleworkFlow {
+    font-size: 37px;
   }
 
 }

@@ -13180,6 +13180,9 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 @media (min-width: 768px) {
+  .h2, .contentChooseUs h2 {
+    font-size: 27px;
+  }
   .countriesButtons {
     margin-top: 15px;
     justify-content: center;
@@ -13282,7 +13285,7 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   }
   .cardChoose {
     padding: 17px;
-    width: 290px;
+    width: 300px;
     height: 165px;
   }
   .postServices {
@@ -13458,6 +13461,11 @@ svg.bi.bi-chevron-left {
     font-size: 41px;
   }
 }
+.containercountrieslg {
+  max-width: 1440px;
+  padding: 53px 69px;
+}
+
 .decor-left-down {
   width: 1.6%;
   top: 64%;
@@ -13466,13 +13474,8 @@ svg.bi.bi-chevron-left {
 
 .decor-left-top {
   width: 14.5%;
-  bottom: 68%;
+  bottom: 64%;
   right: 83%;
-}
-
-.containercountrieslg {
-  max-width: 1440px;
-  padding: 80px 81px;
 }
 
 .decor-right-down {
@@ -13483,7 +13486,7 @@ svg.bi.bi-chevron-left {
 
 .decor-right-top {
   width: 14.5%;
-  bottom: 68%;
+  bottom: 63%;
   left: 83%;
 }
 
@@ -13493,6 +13496,12 @@ svg.bi.bi-chevron-left {
   align-items: center;
 }
 
+@media (min-width: 1920px) {
+  .containercountrieslg {
+    max-width: 1440px;
+    padding: 80px 81px;
+  }
+}
 .team {
   padding: 3rem;
 }
@@ -13914,6 +13923,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
     flex-wrap: nowrap;
   }
   .containerworkFlowlg {
+    padding: 48px;
     max-width: 1024px;
   }
   .containerCardWorkflow {
@@ -13967,6 +13977,11 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   }
   .containerCardWorkflow {
     margin-top: 65px;
+  }
+}
+@media (min-width: 1920px) {
+  .titleworkFlow {
+    font-size: 37px;
   }
 }
 .testimonial {
@@ -14269,10 +14284,10 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 @media (min-width: 1440px) {
   .dateCard {
-    top: 53.3%;
+    top: 54.3%;
   }
   .titleNewsCard {
-    width: 59%;
+    width: 57%;
     margin: 0 auto;
   }
   .containernewslg {
@@ -14439,5 +14454,12 @@ p.m-0.text-white.mt-2 {
   }
   .contentFooter {
     flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1920px) {
+  .container-fluid.text-center.p-4, .text-center.p-4.container-sm, .text-center.p-4.container-md, .text-center.p-4.container-lg, .text-center.p-4.container-xl, .text-center.p-4.container-xxl {
+    text-align: start !important;
+    max-width: 1440px;
+    padding: 33px 5rem !important;
   }
 }
