@@ -12734,9 +12734,9 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 .contentHero {
-  top: 50px;
+  top: 42px;
   width: 100%;
-  padding: 0px 20px;
+  left: 8px;
 }
 
 .containerhero {
@@ -12767,6 +12767,7 @@ svg.bi.bi-plus-lg.float-end.text-primary {
     width: 80%;
     top: 19%;
     padding: 0;
+    left: 20px;
   }
   .containerhero h2, .containerhero .h2 {
     font-size: 51px;
@@ -12941,6 +12942,7 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
+  padding: 40px 20px;
 }
 
 .containerImageServices img {
@@ -13144,7 +13146,7 @@ svg.bi.bi-plus-lg.float-end.text-primary {
 }
 
 .countriesButtons {
-  margin-top: 15px;
+  margin-top: 25px;
   justify-content: center;
 }
 
@@ -13326,10 +13328,31 @@ svg.bi.bi-plus-lg.float-end.text-primary {
   padding: 3rem;
 }
 
+.contentCountrier {
+  display: block;
+}
+
+.fDupla {
+  display: none;
+}
+
+.triple {
+  display: none;
+}
+
+.four {
+  display: none;
+}
+
+.bg-white rounded-4 p-3 countriescard h2, .bg-white rounded-4 p-3 countriescard .h2 {
+  font-size: 31px;
+}
+
 .containercountrieslg {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
+  padding: 30px 20px 40px;
 }
 
 .titleCountries h2, .titleCountries .h2 {
@@ -13411,7 +13434,7 @@ svg.bi.bi-chevron-left {
 
 @media (min-width: 768px) {
   .titleCountries .h2, .titleCountries h2 {
-    font-size: 30px;
+    font-size: 31px;
   }
   .contentCountrier {
     display: flex;
@@ -13433,6 +13456,9 @@ svg.bi.bi-chevron-left {
   }
 }
 @media (min-width: 1024px) {
+  .bg-white.rounded-4.p-3.triple.countriescard {
+    display: block;
+  }
   .decor-left-down {
     width: 2%;
     top: 68%;
@@ -13461,41 +13487,43 @@ svg.bi.bi-chevron-left {
     font-size: 41px;
   }
 }
-.containercountrieslg {
-  max-width: 1440px;
-  padding: 53px 69px;
+@media (min-width: 1440px) {
+  .four {
+    display: block;
+  }
+  .triple {
+    display: block;
+  }
+  .containercountrieslg {
+    max-width: 1440px;
+    padding: 53px 69px;
+  }
+  .decor-left-down {
+    width: 1.6%;
+    top: 64%;
+    right: 96%;
+  }
+  .decor-left-top {
+    width: 14.5%;
+    bottom: 64%;
+    right: 83%;
+  }
+  .decor-right-down {
+    width: 1.6%;
+    top: 64%;
+    left: 96%;
+  }
+  .decor-right-top {
+    width: 14.5%;
+    bottom: 63%;
+    left: 83%;
+  }
+  .contentCountrier {
+    display: flex;
+    gap: 108px;
+    align-items: center;
+  }
 }
-
-.decor-left-down {
-  width: 1.6%;
-  top: 64%;
-  right: 96%;
-}
-
-.decor-left-top {
-  width: 14.5%;
-  bottom: 64%;
-  right: 83%;
-}
-
-.decor-right-down {
-  width: 1.6%;
-  top: 64%;
-  left: 96%;
-}
-
-.decor-right-top {
-  width: 14.5%;
-  bottom: 63%;
-  left: 83%;
-}
-
-.contentCountrier {
-  display: flex;
-  gap: 110px;
-  align-items: center;
-}
-
 @media (min-width: 1920px) {
   .containercountrieslg {
     max-width: 1440px;
@@ -13534,13 +13562,18 @@ svg.bi.bi-chevron-left {
   margin-top: 80px;
 }
 
+.btnMoreTeam {
+  margin-top: 50px;
+}
+
 .styleCard {
   border-radius: 15px;
   width: 240px;
   border: 1px solid #000;
   box-shadow: 7px 6px #000;
   height: 245px;
-  left: 25px;
+  left: -11px;
+  margin: 0 auto;
 }
 .styleCard:hover {
   background-color: #472d30 !important;
@@ -13693,6 +13726,16 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   font-size: 35px;
 }
 
+#carouselExampleCaptionsEducation {
+  margin-top: 18px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .peducation {
   display: flex;
   align-items: center;
@@ -13802,6 +13845,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
+  padding: 60px 20px;
 }
 
 .titleworkFlow {
@@ -14001,6 +14045,15 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   width: 80%;
 }
 
+.containerUserTestimonial {
+  display: flex;
+  margin-top: 10px;
+}
+
+.containerUserTestimonial p {
+  margin: 0;
+}
+
 .ptestimonial {
   display: flex;
   align-items: center;
@@ -14008,6 +14061,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 
 .containercardTestimonial {
   display: flex;
+  justify-content: center;
   gap: 80px;
 }
 
@@ -14118,6 +14172,13 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   }
 }
 @media (min-width: 1024px) {
+  .containerUserTestimonial {
+    display: flex;
+    margin-top: 27px;
+  }
+  .hrTestimonial {
+    margin-top: 31px;
+  }
   .contentCardTestimonial {
     width: 260px;
     left: 43px;
@@ -14198,20 +14259,17 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   color: #fff;
 }
 
-.containernewslg {
-  margin-top: 50px;
-}
-
-.iconCard {
-  margin-top: 10px;
-}
-
 .titleNews p {
   margin-top: 20px;
 }
 
 .titleNews h2, .titleNews .h2 {
   font-size: 26px;
+}
+
+.contentCardNews {
+  text-align: start;
+  padding: 13px;
 }
 
 .dateCard {
@@ -14258,22 +14316,22 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
     margin: 0;
   }
   .dateCard {
-    top: 48.8%;
+    top: 49.4%;
   }
   .containernewslg {
-    padding-bottom: 50px;
+    padding: 70px 20px 50px;
   }
 }
 @media (min-width: 1024px) {
   .dateCard {
-    top: 39.9%;
+    top: 41.8%;
   }
   .containernewslg {
     max-width: 1024px;
     margin-top: 0;
   }
   .titleNews h2, .titleNews .h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
   .containerCardNews {
     flex-wrap: nowrap;
@@ -14284,7 +14342,7 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
 }
 @media (min-width: 1440px) {
   .dateCard {
-    top: 54.3%;
+    top: 55.8%;
   }
   .titleNewsCard {
     width: 57%;
@@ -14293,6 +14351,11 @@ span.color-secondary.ms-2.font-family-base.fw-bold {
   .containernewslg {
     max-width: 1440px;
     margin-top: 20px;
+  }
+}
+@media (min-width: 1920px) {
+  .dateCard {
+    top: 56.5%;
   }
 }
 .containerfooterlg {

@@ -33,14 +33,19 @@
   margin-top: 80px;
 }
 
+.btnMoreTeam {
+  margin-top: 50px;
+}
+
 .styleCard {
   border-radius: 15px;
   width: 240px;
   border: 1px solid #000;
   box-shadow: 7px 6px #000;
   height: 245px;
-  left: 25px;
-  
+  left: -11px;
+  margin: 0 auto;
+
   &:hover {
     background-color: #472d30 !important;
   }

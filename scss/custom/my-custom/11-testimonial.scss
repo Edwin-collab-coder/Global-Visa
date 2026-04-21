@@ -17,6 +17,15 @@
   }
 }
 
+.containerUserTestimonial {
+  display: flex;
+  margin-top: 10px;
+}
+
+.containerUserTestimonial p {
+  margin: 0;
+}
+
 .ptestimonial {
   display: flex;
   align-items: center;
@@ -24,6 +33,7 @@
 
 .containercardTestimonial {
   display: flex;
+  justify-content: center;
   gap: 80px;
 }
 
@@ -159,17 +169,26 @@
 
 @include media-breakpoint-up(lg) {
 
+  .containerUserTestimonial {
+    display: flex;
+    margin-top: 27px;
+  }
+
+  .hrTestimonial {
+    margin-top: 31px;
+  }
+
   .contentCardTestimonial {
-      width: 260px;
-      left: 43px;
-    }
+    width: 260px;
+    left: 43px;
+  }
   
   .shadowCardTestimonial {
     height: 342px;
     width: 330px;
   }
 
-    .containertestimoniallg {
+  .containertestimoniallg {
     max-width: 1024px;
   }
   

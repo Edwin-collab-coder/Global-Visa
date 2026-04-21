@@ -44,14 +44,7 @@
     }
   }
 }
-  
-.containernewslg {
-  margin-top: 50px;
-}
 
-.iconCard {
-  margin-top: 10px;
-}
 
 .titleNews p {
   margin-top: 20px;
@@ -59,6 +52,11 @@
 
 .titleNews h2 {
   font-size: 26px;
+}
+
+.contentCardNews {
+  text-align: start;
+  padding: 13px;
 }
 
 .dateCard {
@@ -112,18 +110,18 @@ top: 38.4%;
   }
   
   .dateCard {
-    top: 48.8%;
+    top: 49.4%;
   }
 
   .containernewslg {
-    padding-bottom: 50px;
+    padding: 70px 20px 50px;
   }
 }
 
 @include media-breakpoint-up(lg) {
 
   .dateCard {
-    top: 39.9%;
+    top: 41.8%;
   }
   
   .containernewslg {
@@ -132,7 +130,7 @@ top: 38.4%;
   }
   
   .titleNews h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
   
   .containerCardNews {
@@ -147,7 +145,7 @@ top: 38.4%;
 @include media-breakpoint-up(xl){
 
   .dateCard {
-    top: 54.3%;
+    top: 55.8%;
   }
 
   .titleNewsCard {
@@ -160,4 +158,10 @@ top: 38.4%;
     margin-top: 20px;
   }
 
+}
+
+@include media-breakpoint-up(xxl){
+  .dateCard {
+    top: 56.5%;
+  }
 }

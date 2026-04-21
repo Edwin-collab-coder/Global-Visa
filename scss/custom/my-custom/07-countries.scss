@@ -3,10 +3,31 @@
   padding: 3rem;
 }
 
+.contentCountrier {
+  display: block;
+}
+
+.fDupla {
+  display: none;
+}
+
+.triple {
+  display: none;
+}
+
+.four {
+  display: none;
+}
+
+.bg-white rounded-4 p-3 countriescard h2 {
+  font-size: 31px;
+}
+
 .containercountrieslg {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
+  padding: 30px 20px 40px;
 }
 
 .titleCountries {
@@ -94,7 +115,7 @@ svg.bi.bi-chevron-left {
 @include media-breakpoint-up(md) {
 
   .titleCountries .h2, .titleCountries h2 {
-    font-size: 30px;
+    font-size: 31px;
   }
 
   .contentCountrier {
@@ -121,7 +142,11 @@ svg.bi.bi-chevron-left {
   }
 }
 
-@include media-breakpoint-up (lg) {
+@include media-breakpoint-up(lg) {
+
+  .bg-white.rounded-4.p-3.triple.countriescard {
+    display: block;
+  }
 
   .decor-left-down {
     width: 2%;
@@ -158,7 +183,15 @@ svg.bi.bi-chevron-left {
 
 }
 
-@include media-breakpoint-up(lx) {
+@include media-breakpoint-up(xl) {
+
+  .four {
+    display: block;
+  }
+
+  .triple {
+    display: block;
+  }
 
   .containercountrieslg {
     max-width: 1440px;
@@ -191,7 +224,7 @@ svg.bi.bi-chevron-left {
 
   .contentCountrier {
     display: flex;
-    gap: 110px;
+    gap: 108px;
     align-items: center;
   }
   
